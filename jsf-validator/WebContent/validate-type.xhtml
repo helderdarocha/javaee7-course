@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+<style>
+	.error {
+	font-family: sans-serif;
+	color: red;
+	font-size: 8pt;
+	}
+</style>
+
+</h:head> 
+<body> 
+	<h:form id="transporte">
+		<h:panelGrid columns="3">
+			
+			Código <h:inputText value="#{transporte.codigo}" id="codigo"/> <h:message for="codigo" styleClass="error"/>
+			Destinatário <h:inputText value="#{transporte.destinatario.nome}" id="nome"/> <h:message for="nome" styleClass="error"/>
+			Rua <h:inputText value="#{transporte.destinatario.endereco.rua}" id="rua"/> <h:message for="rua" styleClass="error"/>
+			Número <h:inputText value="#{transporte.destinatario.endereco.numero}" id="numero"/> <h:message for="numero" styleClass="error"/>
+			Cidade <h:inputText value="#{transporte.destinatario.endereco.cidade}" id="cidade"/> <h:message for="cidade" styleClass="error"/>
+			UF <h:inputText value="#{transporte.destinatario.endereco.uf}" id="uf"/> <h:message for="uf" styleClass="error"/>
+			CEP <h:inputText value="#{transporte.destinatario.endereco.cep}" id="cep"/> <h:message for="cep" styleClass="error"/>
+			Telefone  <h:inputText value="#{transporte.destinatario.telefone}" id="telefone"/> <h:message for="telefone" styleClass="error"/>
+			E-mail <h:inputText value="#{transporte.destinatario.email}" id="email"/> <h:message for="email" styleClass="error"/>
+			
+			Dimensões do pacote <p></p> <p></p>
+			Altura <h:inputText value="#{transporte.pacote.altura}" id="altura"/> <h:message for="altura" styleClass="error"/>
+			Largura <h:inputText value="#{transporte.pacote.largura}" id="largura"/> <h:message for="largura" styleClass="error"/>
+			Profundidade <h:inputText value="#{transporte.pacote.profundidade}" id="profundidade"/> <h:message for="profundidade" styleClass="error"/>
+			Conteúdo <h:inputText value="#{transporte.pacote.conteudo}" id="conteudo"/> <h:message for="conteudo" styleClass="error"/>
+			
+			Valor do seguro <h:inputText value="#{transporte.pacote.seguro}" id="seguro"/> <h:message for="seguro" styleClass="error"/>
+			
+			<h:commandButton action="#{transporte.enviar}" value="Enviar pedido" />
+			<h:commandButton action="#{transporte.cancelar}" value="Cancelar" immediate="true"/>
+		</h:panelGrid>
+	</h:form>
+</body> 
+</html>

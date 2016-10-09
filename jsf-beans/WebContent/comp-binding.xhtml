@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<h:form>
+		<h:selectOneMenu binding="#{cbb.menuFilmes}">
+		   <f:selectItem itemLabel="Selecione um filme" noSelectionOption="true" />
+		   <f:selectItems binding="#{cbb.itemsFilmes}" var="filme" itemLabel="#{filme.titulo}" itemValue="#{filme}"/>
+		</h:selectOneMenu>
+		
+		Selected: <h:outputText id="selected" value="${cbb.menuFilmes.value}" />
+		
+		<h:selectManyCheckbox binding="#{cbb.menuOpcoes}">
+			<f:selectItem itemLabel="título"/>
+			<f:selectItem itemLabel="diretor"/>
+			<f:selectItem itemLabel="imdb"/>
+			<f:selectItem itemLabel="duração"/>
+			<f:selectItem itemLabel="ano"/>
+		</h:selectManyCheckbox>
+		
+		<h:dataTable binding="#{cbb.detalhesFilme}" id="details" rendered="true">
+			<h:column>
+				<h:outputText binding="#{cbb.tituloFilme}" rendered="true"/>
+			</h:column>
+			<h:column>
+				<h:outputText binding="#{cbb.diretorFilme}" rendered="true"/>
+			</h:column>
+			<h:column>
+				<h:outputText binding="#{cbb.imdbFilme}" rendered="false"/>
+			</h:column>
+			<h:column>
+				<h:outputText binding="#{cbb.duracaoFilme}" rendered="false"/>
+			</h:column>
+			<h:column>
+				<h:outputText binding="#{cbb.anoFilme}" rendered="false"/>
+			</h:column>
+		</h:dataTable>
+	</h:form>
+</body>
+</html>

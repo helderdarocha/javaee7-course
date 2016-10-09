@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<h:outputStylesheet library="css" name="layout.css" />
+	<title><ui:insert name="titulo">PteroCargo</ui:insert></title>
+</h:head>
+
+<body>
+	<p:layout fullPage="true">
+		<ui:insert name="cabecalho">
+			<p:layoutUnit position="north">
+				<header>
+					<p:layout>
+						<p:layoutUnit position="west">
+							<h:graphicImage library="images" name="pterosaur2.jpg"
+								height="150" />
+						</p:layoutUnit>
+						<p:layoutUnit position="center">
+							<h1>PteroCargo</h1>
+							<h2>Transporte de cargas no tempo e no espaço</h2>
+						</p:layoutUnit>
+						<ui:insert name="menu-superior">
+							<p:layoutUnit position="south">
+								<ui:include src="menu.xhtml" />
+							</p:layoutUnit>
+						</ui:insert>
+					</p:layout>
+				</header>
+			</p:layoutUnit>
+		</ui:insert>
+
+		<ui:insert name="conteudo-pagina">
+			<div id="conteudo">
+
+				<ui:insert name="menu-lateral">
+					<p:layoutUnit position="west">
+						<nav class="menu-lat">
+							<ul class="nav">
+								<li><h:outputLink value="clienteTemplate1.faces">home</h:outputLink></li>
+								<li><h:outputLink value="clienteTemplate2.faces">sobre</h:outputLink></li>
+								<li><h:outputLink value="clienteTemplate3.faces">serviços</h:outputLink></li>
+							</ul>
+						</nav>
+					</p:layoutUnit>
+				</ui:insert>
+
+				<ui:insert name="conteudo-lateral">
+					<p:layoutUnit position="center">
+						<div id="principal">Conteúdo a ser incluído</div>
+					</p:layoutUnit>
+				</ui:insert>
+			</div>
+		</ui:insert>
+
+		<ui:insert name="rodape">
+			<p:layoutUnit position="south">
+				<footer>Copyright (c) PteroCargo Ltda.</footer>
+			</p:layoutUnit>
+		</ui:insert>
+
+	</p:layout>
+</body>
+</html>

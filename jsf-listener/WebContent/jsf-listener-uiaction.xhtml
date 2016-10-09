@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<h:form id="frm">
+	
+		<h:panelGrid columns="2">
+		
+			<h:commandButton value="Button 1" id="btn1">
+				<f:actionListener type="br.com.argonavis.javaee7.jsf.listener.RegistroDeClique" />
+				<f:ajax render="result" />
+			</h:commandButton>
+			
+			<h:outputText id="result" value="ID: #{bean.buttonId}"/>
+			
+			<h:commandButton value="Button 2" id="btn2" actionListener="#{bean.processadorAction}" >
+				<f:ajax render="result" />
+			</h:commandButton>
+			
+		</h:panelGrid>
+	
+	</h:form>
+</body> 
+</html>

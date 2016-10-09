@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+	<h:panelGrid>
+		<h:outputText id="filme" value="#{cinemateca.filme}"></h:outputText> <!-- Imprime toString() - apenas para leitura -->
+		
+		<h:form id="f1">
+		    <h:messages style="color:red" />
+			<h:selectOneMenu id="menu" value="#{cinemateca.filme}" valueChangeListener="#{bean.processadorValueChange}"> 
+			    <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+				<f:selectItems value="#{cinemateca.filmes}" 
+					var="filme" 
+					itemLabel="#{filme.titulo}" 
+					itemValue="#{filme}"/> 
+				<f:ajax event="change" execute="@form" render="filme imdb" /> <!-- event="change" e execute="@this" é default -->
+				<f:converter converterId="filmeConverter" />
+				
+				<f:valueChangeListener type="br.com.argonavis.javaee7.jsf.listener.RegistroDeAlteracao" />
+				
+			</h:selectOneMenu>
+		</h:form>
+
+	</h:panelGrid>
+
+</body> 
+</html>

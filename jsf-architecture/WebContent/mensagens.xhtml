@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<h1>Exemplo com ciclo de vida</h1>
+	<p>Para causar erro de validação: digite "erro2" ou deixe campo null.</p>
+	<p>Para causar erro de conversão: digite "erro1".</p>
+	
+	<h:form id="formulario">
+		<h:panelGrid columns="3">
+			<h:outputText value="Mensagem" />
+			<h:inputText value="#{mensagemBean.mensagem}" 
+			             id="msg" 
+			             required="true" 
+			             binding="#{mensagemBean.inputComponent}">
+				<f:converter converterId="mensagemConverter" />
+				<f:validator validatorId="mensagemValidator" />
+				<f:valueChangeListener type="br.com.argonavis.javaee7.jsf.architecture.MensagemValueChangeListener"/>
+			</h:inputText>
+			<h:message for="msg" style="color: red"/>
+		</h:panelGrid>
+		<h:commandButton action="#{mensagemBean.processarMensagem()}" value="Processar" />
+		<h:commandButton action="index" value="Cancelar" immediate="true"/>
+	</h:form>
+	
+</body> 
+</html>

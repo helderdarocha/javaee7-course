@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<h:outputStylesheet library="css" name="cores.css" />
+	<h:outputScript library="js" name="programa.js" />
+</h:head>
+<body>
+	<h1>Página Web</h1>
+
+	<p>
+		Um parágrafo com um
+		<h:outputLink value="http://www.google.com">link externo</h:outputLink>
+		, um
+		<h:link value="link local" outcome="index" />
+		e uma imagem clicável:
+		<h:outputLink value="javascript:clickTheFish()">
+		<h:graphicImage library="images" name="fish.png" styleClass="fish" />
+		</h:outputLink>
+	</p>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+<h:head>
+	<style>
+h1 {
+	font-size: 12pt;
+	font-family: sans-serif
+}
+h2 {
+	font-size: 11pt;
+	font-family: sans-serif;
+}
+
+.col1 {
+	font-family: monospace;
+}
+.pre-col1 {
+	font-family: monospace;
+	white-space: pre;
+}
+.msg-default {
+	color: red;
+	border: solid blue 1px;
+	padding: 2px;
+}
+</style>
+</h:head>
+<body>
+	
+		<h1>Links</h1>
+		<h:panelGrid columns="2" columnClasses="col1,col2">
+			&lt;h:link value="Página principal" outcome="index"/&gt;
+			<h:link value="Página principal" outcome="index" />
+			
+			&lt;h:link outcome="index"&gt;Página principal&lt;h:link&gt;
+			<h:link outcome="index">Página principal</h:link>
+			
+			&lt;h:outputLink value="index.faces"&gt;Página principal&lt;h:outputLink&gt;
+			<h:outputLink value="index.faces">Página principal</h:outputLink>
+			
+			&lt;h:commandLink value="Página principal" action="\#{bean.goHome()}"/&gt;
+			<h:form>
+			<h:commandLink value="Página principal" action="#{bean.goHome()}" />
+			</h:form>
+			
+			&lt;h:commandLink action="index"&gt;Página principal&lt;h:commandLink&gt;
+			<h:form>
+			<h:commandLink action="index">Página principal</h:commandLink>
+			</h:form>
+			
+			&lt;h:commandLink action="\#{bean.goHome}"&gt;Página principal&lt;h:commandLink&gt;
+			<h:form>
+			<h:commandLink action="#{bean.goHome}">Página principal</h:commandLink>
+			</h:form>
+			
+		</h:panelGrid>
+		
+		<h1>Botões</h1>
+		<h:panelGrid columns="2" columnClasses="col1,col2">
+		   &lt;h:commandButton action="index" value="Página principal" /&gt;:
+		   <h:form>
+		   <h:commandButton action="index" value="Página principal" />
+		   </h:form>
+		
+		   &lt;h:commandButton action="\#{bean.goHome()}" value="Página principal"/&gt;: 
+		   <h:form>
+		   <h:commandButton action="#{bean.goHome()}" value="Página principal" />
+		   </h:form>
+		
+		   &lt;h:button value="Página principal" outcome="index"/&gt;: 
+		   <h:button value="Página principal" outcome="index" />
+		</h:panelGrid>
+		
+		<h:link outcome="segunda" value="Clique para continuar" includeViewParams="true">
+		   <f:param name="nome" value="#{bean.nome}" />
+		</h:link>
+
+		<h1>Tabelas e layouts</h1>
+		<h2>h:dataTable + h:column e f:facet</h2>
+		<h:panelGrid columns="2" columnClasses="pre-col1,col2">
+			<h:outputText escape="true" value="#{listings.dataTableCode}"/>
+			<h:dataTable value="#{cinemateca.filmes}" var="filme">
+				<h:column>
+					<f:facet name="header">Título</f:facet>
+		    		#{filme.titulo}
+		    	</h:column>
+				<h:column>
+					<f:facet name="header">Diretor</f:facet>
+		    		#{filme.diretor}
+		    	</h:column>
+				<h:column>
+					<f:facet name="header">Ano</f:facet>
+		    		#{filme.ano}
+		    	</h:column>
+			</h:dataTable>
+		</h:panelGrid>
+		
+		<h2>h:dataTable mostrando "página" contendo três itens, iniciando no terceiro item</h2>
+		<h:panelGrid columns="2" columnClasses="pre-col1,col2" rows="3" first="2">
+			<h:outputText escape="true" value="#{listings.dataTableCode2}"/>
+			<h:dataTable value="#{cinemateca.filmes}" var="filme">
+				<h:column>
+					<f:facet name="header">Título</f:facet>
+		    		#{filme.titulo}
+		    	</h:column>
+				<h:column>
+					<f:facet name="header">Diretor</f:facet>
+		    		#{filme.diretor}
+		    	</h:column>
+				<h:column>
+					<f:facet name="header">Ano</f:facet>
+		    		#{filme.ano}
+		    	</h:column>
+			</h:dataTable>
+		</h:panelGrid>
+
+	<h2>h:panelGrid e h:panelGroup</h2>
+		<h:panelGrid columns="2" columnClasses="pre-col1,col2">
+		    <h:outputText escape="true" value="#{listings.panelGridCode}"/>
+	
+			<h:panelGrid columns="3">
+				<h:inputText value="1.1" />
+				<h:inputText value="1.2" />
+	
+				<h:panelGroup>
+					<h:panelGrid>
+						<h:inputText value="1.3.a" />
+						<h:inputText value="1.3.b" />
+						<h:inputText value="1.3.c" />
+					</h:panelGrid>
+				</h:panelGroup>
+	
+				<h:inputText value="2.1" />
+				<h:inputText value="2.2" />
+				<h:inputText value="2.3" />
+	
+			</h:panelGrid>
+		</h:panelGrid>
+
+	<h:form id="f1">
+		<h1>Entrada de texto</h1>
+		
+		<h:panelGrid columns="2" columnClasses="col1,col2">
+		    &lt;h:inputHidden id="config" value="\#{bean.hidden}"/&gt;
+		    <h:panelGroup>
+		    <h:inputHidden id="config" value="#{bean.hidden}"/>
+		    <h:commandButton type="button" onclick="alert(document.getElementById('f1:config').value)" value="Show hidden"/>
+		    </h:panelGroup>
+
+			&lt;h:inputSecret id="pass" value="\#{bean.pass}"/&gt;
+			<h:panelGroup>
+			<h:inputSecret id="pass" value="#{bean.pass}" required="true"/>
+			<h:commandButton type="button" onclick="alert(document.getElementById('f1:pass').value)" value="Show secret"/>
+			</h:panelGroup>
+			
+			&lt;h:inputText id="input" value="\#{bean.input}"/&gt;
+			<h:inputText id="input" value="#{bean.input}">
+			    <f:validateLength minimum="5" />
+			</h:inputText>
+			&lt;h:inputTextarea id="description" value="\#{bean.description}"/&gt;
+			<h:inputTextarea id="description" value="#{bean.description}"/>
+		</h:panelGrid>
+
+		<h1>Imagens e saída de texto</h1>
+		<h:panelGrid columns="2" columnClasses="pre-col1,col2">
+&lt;h:graphicImage value="\#{resource['images:fish.png']}" /&gt;
+		<h:graphicImage value="#{resource['images:fish.png']}" width="200"/>
+&lt;h:graphicImage url="/resources/images/bird.jpg"/&gt;
+		<h:graphicImage url="/resources/images/bird.jpg" />
+&lt;h:graphicImage library="images" name="t-rex.jpg"/&gt;
+		<h:graphicImage library="images" name="t-rex.jpg" width="300"/>
+		
+		<h:outputText value="#{listings.shortCode}" escape="true" />
+		<h:outputText value="#{listings.shortCode}" escape="true" />
+&lt;h:outputLabel for="input" value="Input text"/&gt;
+		<h:outputLabel for="input" value="Input text"/>
+		
+		<h:outputText value="#{listings.outputFormatCode}" escape="true" />
+		<h:outputFormat value="O número da sorte de hoje é {1} e o de ontem foi {0}.">
+		    <f:param value="#{bean.sorte}" />
+		    <f:param value="#{bean.jogar()}" />
+		</h:outputFormat>
+		</h:panelGrid>
+		
+		<h1>Mensagens</h1>
+		<h:panelGrid columns="2" columnClasses="col1,col2">
+		Resumo de mensagens: <h:messages styleClass="msg-default" />
+		Mensagem para <b>input</b> com &lt; de 5 caracteres: <h:message for="input" style="font-family: sans-serif" />
+		Mensagem para <b>pass</b> vazio: <h:message for="pass"  style="background-color: yellow" />
+		<h:commandButton value="Enviar para ver mensagens" action="results"/>
+		</h:panelGrid>
+
+		<h1>Seleção</h1>
+		<h:panelGrid columns="3" columnClasses="pre-col1,col2,col3">
+		<h:panelGroup>h:selectBooleanCheckbox value="#{bean.dark}"/ Fundo escuro</h:panelGroup>
+		<h:panelGroup><h:selectBooleanCheckbox id="sbc" value="#{bean.dark}"/> Fundo escuro</h:panelGroup>
+		<h:message for="sbc"/>
+		
+		<h:outputText value="#{listings.selectOneListboxCode}" escape="true" />
+		<h:selectOneListbox id="sol" value="#{bean.filme}">
+			<f:selectItems value="#{cinemateca.filmes}" 
+			               var="filme" 
+			               itemLabel="#{filme.titulo}" 
+			               itemValue="#{filme.imdb}" />
+		</h:selectOneListbox>
+		<h:message for="sol"/>
+		
+		<h:outputText value="#{listings.selectOneMenuCode}" escape="true" />
+		<h:selectOneMenu id="som" value="#{bean.filme}">
+			<f:selectItems value="#{cinemateca.filmes}" 
+			               var="filme" 
+			               itemLabel="#{filme.titulo}" 
+			               itemValue="#{filme.imdb}" />
+		</h:selectOneMenu>
+		<h:message for="som"/>
+		
+		<h:outputText value="#{listings.selectOneRadioCode}" escape="true" />
+		<h:selectOneRadio id="sor" value="#{bean.filme}" layout="pageDirection">
+			<f:selectItems value="#{cinemateca.filmes}" 
+			               var="filme" 
+			               itemLabel="#{filme.titulo}" 
+			               itemValue="#{filme.imdb}" />
+		</h:selectOneRadio>
+		<h:message for="sor"/>
+		
+		<h:outputText value="#{listings.selectManyCheckboxCode}" escape="true" />
+		<h:selectManyCheckbox id="smc" value="#{bean.turnos}">
+		    <f:selectItem itemValue="1" itemLabel="manha" />
+		    <f:selectItem itemValue="2" itemLabel="tarde" />
+		    <f:selectItem itemValue="3" itemLabel="noite" />
+		</h:selectManyCheckbox>
+		<h:message for="smc"/>
+
+        <h:outputText value="#{listings.selectManyListboxCode}" escape="true" />
+		<h:selectManyListbox id="sml" value="#{bean.selecaoFilmes}">
+			<f:selectItems value="#{cinemateca.filmes}" 
+			               var="filme" 
+			               itemLabel="#{filme.titulo}" 
+			               itemValue="#{filme.imdb}" />
+		</h:selectManyListbox>
+		<h:message for="sml"/>
+		
+		<h:outputText value="#{listings.selectManyMenuCode}" escape="true" />
+		<h:selectManyMenu id="smm" value="#{bean.turnos}">
+		    <f:selectItem itemValue="1" itemLabel="manha" />
+		    <f:selectItem itemValue="2" itemLabel="tarde" />
+		    <f:selectItem itemValue="3" itemLabel="noite" />
+		</h:selectManyMenu>
+		<h:message for="smm"/>
+		
+        </h:panelGrid>
+
+
+	</h:form>
+	
+	
+</body>
+</html>

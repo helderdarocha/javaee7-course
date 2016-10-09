@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+</h:head>
+<body>
+	<h1>Objetos</h1>
+
+	<h:panelGrid>
+		<h:outputText id="filme" value="#{cinemateca.filme}"></h:outputText> <!-- Imprime toString() - apenas para leitura -->
+
+		<h:outputText id="imdb" value="#{cinemateca.filme}"> <!-- Imprime o valor convertido - pode ser usado para gravação -->
+			<f:converter converterId="filmeConverter"/> 
+		</h:outputText>
+		
+		<h:form id="f1">
+		    <h:messages style="color:red" />
+			<h:selectOneMenu id="menu" value="#{cinemateca.filme}"> 
+			    <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+				<f:selectItems value="#{cinemateca.filmes}" 
+					var="filme" 
+					itemLabel="#{filme.titulo}" 
+					itemValue="#{filme}"/> 
+				<f:ajax event="change" execute="@form" render="filme imdb" /> <!-- event="change" e execute="@this" é default -->
+				<f:converter converterId="filmeConverter" />
+			</h:selectOneMenu>
+		</h:form>
+
+	</h:panelGrid>
+</body>
+</html>

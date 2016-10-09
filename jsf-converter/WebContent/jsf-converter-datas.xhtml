@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+</h:head>
+<body>
+	<h1>Datas</h1>
+
+	<h:panelGrid>
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime dateStyle="full" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime dateStyle="long" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime dateStyle="medium" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime dateStyle="short" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime dateStyle="short" locale="pt" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime type="both" dateStyle="short" timeStyle="medium" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime type="time" timeStyle="long" />
+		</h:outputText>
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime type="time" timeStyle="full" locale="pt" />
+		</h:outputText>
+
+
+
+		<h:outputText value="#{tempoBean.hoje}">
+			<f:convertDateTime pattern="EEEE, d MMMM, yyyy HH:mm z" locale="pt" />
+		</h:outputText>
+
+		<ul>
+			<ui:repeat value="#{tempoBean.horarios}" var="horario">
+				<li>#{horario}</li>
+			</ui:repeat>
+		</ul>
+
+		<ul>
+			<ui:repeat value="#{tempoBean.horarios}" var="horario">
+				<li><h:outputText value="#{horario}">
+						<f:convertDateTime dateStyle="short" type="both" locale="pt" />
+					</h:outputText></li>
+			</ui:repeat>
+		</ul>
+		
+		<ul>
+			<ui:repeat value="#{tempoBean.horarios}" var="horario">
+				<li><h:outputText value="#{horario}">
+						<f:converter converterId="horarioConverter" />
+						<f:attribute name="pattern" value="EEEEE, d MMMM, yyyy HH:mm z" />
+				        <f:attribute name="locale" value="pt" />
+					</h:outputText>
+				</li>
+			</ui:repeat>
+		</ul>
+
+		<h:form>
+		<!-- O valor esta convertido (veja o print), mas o label nao: o converter nao se aplica ao label!!
+		     Solução: crie um metodo para fornecer os labels formatados no bean, ou
+		     use uma biblioteca (ex: Omnifaces formatDate())
+		 -->
+			<h:selectOneMenu converter="horarioConverter" value="#{tempoBean.hoje}">
+			    <f:attribute name="pattern" value="EEEEE, d MMMM, yyyy" />
+				<f:attribute name="locale" value="en" />
+				<f:selectItems value="#{tempoBean.horarios}" var="horario" itemLabel="#{horario}" itemValue="#{horario}"/>
+			</h:selectOneMenu>
+			</h:form>
+		
+
+
+	</h:panelGrid>
+</body>
+</html>

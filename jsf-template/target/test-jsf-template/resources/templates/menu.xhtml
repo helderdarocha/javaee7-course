@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+	<ui:composition>
+	prf
+		<p:layoutUnit position="north" size="155" collapsed="false"
+			resizable="false" closable="false" collapsible="false" gutter="6">
+
+			<span style="position: absolute; top: 40px; left: 250px; bottom: 0px">
+				<h:form>
+
+					<p:menubar style="background: transparent">
+
+						<p:submenu label="Sobre">
+							<p:menuitem value="Quem somos..."
+								outcome="/clienteTemplate2.xhtml" />
+							<p:menuitem value="Serviços..." outcome="/clienteTemplate3.xhtml" />
+							<p:separator />
+							<p:menuitem value="Clientes..." url="#" />
+						</p:submenu>
+
+						<p:submenu label="Coleta">
+							<p:menuitem value="Simulação de orçamento" url="#" />
+							<p:menuitem value="Locais de coleta" url="#" />
+						</p:submenu>
+
+						<p:submenu label="Prazos, locais e datas de entrega">
+							<p:menuitem value="Futuro" />
+							<p:menuitem value="Passado" />
+							<p:menuitem value="Local" />
+							<p:separator />
+							<p:menuitem value="Prazo quântico" />
+							<p:menuitem value="Prazo relativo" />
+						</p:submenu>
+
+						<p:submenu label="Ajuda">
+							<p:menuitem value="Manual de física" url="#" />
+							<p:menuitem value="Manual de paleontologia" url="#" />
+							<p:separator />
+							<p:menuitem value="Como embalar" />
+						</p:submenu>
+
+						<p:submenu label="Usuário">
+							<p:menuitem value="Login" url="#" />
+							<p:menuitem value="Funcionários" url="#" disabled="true" />
+							<p:separator />
+							<p:menuitem value="Administração" url="#" disabled="true" />
+							<p:menuitem value="Configuração" />
+							<p:separator />
+							<p:menuitem value="Sair" url="/" />
+						</p:submenu>
+
+					</p:menubar>
+
+				</h:form>
+
+			</span>
+		</p:layoutUnit>
+	</ui:composition>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:cc="http://xmlns.jcp.org/jsf/composite">
+
+<!-- Interface -->
+<cc:interface>
+	<cc:attribute name="longitude" required="true"/>
+	<cc:attribute name="latitude"  required="true"/>
+	<cc:attribute name="actionListener" 
+				  method-signature="void register(javax.faces.event.ActionEvent)" 
+				  targets="cc-form:locBtn"/>
+</cc:interface>
+
+<!-- Implementação -->
+<cc:implementation>
+
+	<h:form id="cc-form">
+		<h:panelGrid columns="3">
+			<h:outputText value="Latitude:" />
+			<h:inputText value="#{cc.attrs.latitude}" id="lat" />
+			<h:message for="lat" style="color: red" />
+
+			<h:outputText value="Longitude:" />
+			<h:inputText value="#{cc.attrs.longitude}" id="lon" />
+			<h:message for="lon" style="color: red" />
+		</h:panelGrid>
+
+		<h:commandButton id="locBtn" action="map" value="Localizar" />
+	</h:form>
+
+</cc:implementation>
+
+</html>

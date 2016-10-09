@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+<h:head></h:head>
+<body>
+
+	<h1>ui:repeat vs. c:forEach</h1>
+
+	<ui:param name="seq" value="${[1,2,3,4,5,6,7,8]}" />
+
+
+    <h2>ui:repeat</h2>
+	<ol>
+		<ui:repeat value="${seq}" var="numero">
+			<li><h:outputText value="${numero}" /></li>
+		</ui:repeat>
+	</ol>
+	<h2>c:forEach</h2>
+	<ol>
+		<c:forEach items="${seq}" var="numero">
+			<li><h:outputText value="${numero}" /></li>
+		</c:forEach>
+	</ol>
+
+	<h2>ui:repeat + rendered</h2>
+	<ol>
+		<ui:repeat value="${seq}" var="numero">
+			<ui:fragment rendered="${numero mod 2 ne 0}">
+				<li><h:outputText value="${numero}" /></li>
+			</ui:fragment>
+		</ui:repeat>
+	</ol>
+
+	<h2>ui:repeat + c:if</h2>
+	<ol>
+		<ui:repeat value="${seq}" var="numero">
+			<c:if test="${numero mod 2 ne 0}">
+				<li><h:outputText value="${numero}" /></li>
+			</c:if>
+		</ui:repeat>
+	</ol>
+
+
+	<h2>c:forEach + rendered</h2>
+	<ol>
+		<c:forEach items="${seq}" var="numero">
+			<ui:fragment rendered="${numero mod 2 ne 0}">
+				<li><h:outputText value="${numero}" /></li>
+			</ui:fragment>
+		</c:forEach>
+	</ol>
+
+
+	<h2>c:forEach + c:if</h2>
+	<ol>
+		<c:forEach items="${seq}" var="numero">
+			<c:if test="${numero mod 2 ne 0}">
+				<li><h:outputText value="${numero}" /></li>
+			</c:if>
+		</c:forEach>
+	</ol>
+</body>
+</html>

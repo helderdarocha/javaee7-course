@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+</h:head>
+<body>
+	<h1>Números</h1>
+
+	<h:panelGrid>
+		<h:outputText value="#{numerosBean.total}"></h:outputText>
+		<h:outputText value="#{numerosBean.total}">
+			<f:convertNumber type="currency" />
+		</h:outputText>
+		<h:outputText value="#{numerosBean.total}">
+			<f:convertNumber type="currency" currencySymbol="R$" />
+		</h:outputText>
+		<h:outputText value="#{numerosBean.total}">
+			<f:convertNumber type="currency" currencyCode="BRL" />
+		</h:outputText>
+		<h:outputText value="#{numerosBean.total}">
+			<f:convertNumber type="currency" currencyCode="BRL" locale="pt-BR" />
+		</h:outputText>
+
+		<h:outputText value="#{numerosBean.contagem div numerosBean.numero}">
+			<f:convertNumber type="number" pattern="#,###.##" locale="pt-BR" />
+		</h:outputText>
+		<h:outputText
+			value="#{numerosBean.contagem div numerosBean.numero div 100}">
+			<f:convertNumber type="percent" locale="pt-BR" minFractionDigits="2" />
+		</h:outputText>
+
+		<h:dataTable value="#{numerosBean.precos}" var="preco">
+			<h:column>
+				<h:outputText value="#{preco}">
+					<f:convertNumber type="currency" currencyCode="BRL" locale="pt-BR" />
+				</h:outputText>
+			</h:column>
+		</h:dataTable>
+
+	</h:panelGrid>
+</body>
+</html>

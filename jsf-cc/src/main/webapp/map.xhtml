@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+	<style>
+		#mapid { height: 400px; }
+	</style>
+</h:head> 
+<body> 
+	<h:panelGrid>
+	Latitude:  <h:outputText value="#{locationService.location.latitude}" />
+	Longitude: <h:outputText value="#{locationService.location.longitude}" />
+	</h:panelGrid>
+	
+	<div id="mapid"></div>
+	<script>
+  		var lat = #{locationService.location.latitude};
+  		var lon = #{locationService.location.longitude};
+	
+	    var map = L.map('mapid')
+	               .setView([lat, lon], 9);
+
+	    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	    var osmAttrib = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+	    var osm = new L.TileLayer(osmUrl, {
+	        maxZoom: 22,
+	        attribution: osmAttrib
+	    });
+	    map.addLayer(osm);
+	    
+	</script>
+</body> 
+</html>

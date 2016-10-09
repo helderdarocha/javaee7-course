@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+<h1>Pacote enviado</h1>
+
+<h:panelGrid columns="2">
+			Codigo <b><h:outputText value="#{transporte.codigo}" id="codigo"/></b>
+			Destinatário <b><h:outputText value="#{transporte.destinatario.nome}" id="nome"/></b>
+			Rua <b><h:outputText value="#{transporte.destinatario.endereco.rua}" id="rua"/></b>
+			Número <b><h:outputText value="#{transporte.destinatario.endereco.numero}" id="numero"/></b>
+			Cidade <b><h:outputText value="#{transporte.destinatario.endereco.cidade}" id="cidade"/></b>
+			UF <b><h:outputText value="#{transporte.destinatario.endereco.uf}" id="uf"/></b>
+			CEP <b><h:outputText value="#{transporte.destinatario.endereco.cep}" id="cep"/></b>
+			Telefone  <h:outputText value="#{transporte.destinatario.telefone}" id="telefone"/>
+			E-mail <b><h:outputText value="#{transporte.destinatario.email}" id="email"/></b>
+			
+			Dimensões do pacote <p></p>
+			Altura <b><h:outputText value="#{transporte.pacote.altura}" id="altura"/></b>
+			Largura <b><h:outputText value="#{transporte.pacote.largura}" id="largura"/></b>
+			Profundidade <b><h:outputText value="#{transporte.pacote.profundidade}" id="profundidade"/></b>
+			Conteúdo <b><h:outputText value="#{transporte.pacote.conteudo}" id="conteudo"/></b>
+			
+			Valor do seguro <b><h:outputText value="#{transporte.pacote.seguro}" id="seguro"/></b>
+</h:panelGrid>
+</body> 
+</html>

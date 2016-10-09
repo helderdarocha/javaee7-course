@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head></h:head>
+<body>
+	<h:form>
+		<h1>UIInput e UIOutput</h1>
+		<h4>Binding de texto usando &lt;inputText&gt; (elemento HTML
+			&lt;input type="text"&gt;) e &lt;outputText&gt; (bloco de texto)</h4>
+		<p>
+			2<sup> <h:inputText value="#{vbb.exponent}" size="3" />
+			</sup> =
+			<h:outputText id="result" value="#{vbb.result}" />
+		</p>
+
+		<h1>UIData</h1>
+		<h4>Binding entre uma lista/array e uma tabela HTML (via
+			&lt;dataTable&gt;)</h4>
+		<h:dataTable value="#{vbb.filmes}" var="filme">
+			<h:column>#{filme.imdb}</h:column>
+			<h:column>#{filme.titulo}</h:column>
+			<h:column>#{filme.diretor}</h:column>
+			<h:column>#{filme.ano}</h:column>
+			<h:column>#{filme.duracao}</h:column>
+		</h:dataTable>
+
+		<h1>UiSelectBoolean</h1>
+		<h4></h4>
+		<h:selectManyCheckbox layout="pageDirection"
+			value="#{vbb.selectedFilmes}">
+			<f:selectItems value="#{vbb.filmes}" />
+			<f:ajax execute="@this" listener="#{vbb.change}" render="menu" />
+		</h:selectManyCheckbox>
+
+		<h1>UISelectOne</h1>
+		<h4></h4>
+		<h:selectOneMenu id="menu">
+			<f:selectItems value="#{vbb.selectedFilmes}" />
+		</h:selectOneMenu>
+
+	</h:form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+br/com/argonavis/javaee7/jpa/inheritance/InheritanceTestServlet.class
+br/com/argonavis/javaee7/jpa/inheritance/tableperclass/Caminhao.class
+br/com/argonavis/javaee7/jpa/inheritance/tableperclass/Onibus.class
+br/com/argonavis/javaee7/jpa/inheritance/InheritanceSetupServlet.class
+br/com/argonavis/javaee7/jpa/inheritance/CdiResources.class
+br/com/argonavis/javaee7/jpa/inheritance/tableperclass/Aviao.class
+br/com/argonavis/javaee7/jpa/inheritance/tableperclass/VeiculoDeCarga.class
+br/com/argonavis/javaee7/jpa/inheritance/tableperclass/Veiculo.class

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+<style>
+	.error {
+	font-family: sans-serif;
+	color: red;
+	font-size: 8pt;
+	}
+</style>
+
+</h:head> 
+<body> 
+	<h:form id="transporte">
+		<h:panelGrid columns="3">
+		
+			Código de 5 números 
+			<h:inputText value="#{transporte.codigo}" id="codigo">
+			    <f:validateLength minimum="5" maximum="5"/>
+			</h:inputText> 
+			<h:message for="codigo" styleClass="error"/>
+			
+			Destinatário <h:inputText value="#{transporte.destinatario.nome}" id="nome" 
+			                          required="true"/> 
+			<h:message for="nome" styleClass="error"/>
+			
+			Rua <h:inputText value="#{transporte.destinatario.endereco.rua}" id="rua"/> 
+			<h:message for="rua" styleClass="error"/>
+			
+			Número <h:inputText value="#{transporte.destinatario.endereco.numero}" id="numero"/> 
+			<h:message for="numero" styleClass="error"/>
+			
+			Cidade <h:inputText value="#{transporte.destinatario.endereco.cidade}" id="cidade" 
+			                    required="true" 
+			                    requiredMessane="É obrigatório informar a cidade"/> 
+			<h:message for="cidade" styleClass="error"/>
+			
+			UF <h:inputText value="#{transporte.destinatario.endereco.uf}" id="uf" 
+			                    required="true" 
+			                    requiredMessage="É obrigatório informar a UF"/> 
+			<h:message for="uf" styleClass="error"/>
+			
+			CEP 
+			<h:inputText value="#{transporte.destinatario.endereco.cep}" id="cep">
+				<f:validator validatorId="CEPValidator" />
+			</h:inputText>
+			<h:message for="cep" styleClass="error"/>
+			
+			Telefone  <h:inputText value="#{transporte.destinatario.telefone}" id="telefone">
+			              <f:validateRegex pattern="^([+]?[\d]+)?$"/>
+			          </h:inputText>
+			<h:message for="telefone" styleClass="error"/>
+			
+			E-mail  <h:inputText value="#{transporte.destinatario.email}" id="email">
+						<f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]"/>
+					</h:inputText>
+			<h:message for="email" styleClass="error"/>
+			
+			Dimensões do pacote <p></p> <p></p>
+			Altura 
+			<h:inputText value="#{transporte.pacote.altura}" id="altura"> 
+			     <f:validateLongRange minimum="1" maximum="200"/>
+			</h:inputText>
+			<h:message for="altura" styleClass="error"/>
+			Largura 
+			<h:inputText value="#{transporte.pacote.largura}" id="largura"> 
+			     <f:validateLongRange minimum="1" maximum="200"/>
+			</h:inputText>
+			<h:message for="largura" styleClass="error"/>
+			Profundidade 
+			<h:inputText value="#{transporte.pacote.profundidade}" id="profundidade"> 
+				<f:validateLongRange minimum="1" maximum="200"/>
+			</h:inputText>
+			<h:message for="profundidade" styleClass="error"/>
+			Conteúdo 
+			<h:inputText value="#{transporte.pacote.conteudo}" id="conteudo" required="true"/>
+			<h:message for="conteudo" styleClass="error"/>
+			
+			Valor do seguro (entre 1000 e 10000)
+			<h:inputText value="#{transporte.pacote.seguro}" id="seguro"> 
+				<f:validateDoubleRange minimum="1000.0" maximum="10000.0"/>
+			</h:inputText>
+			<h:message for="seguro" styleClass="error"/>
+			
+			<h:commandButton action="#{transporte.enviar}" value="Enviar pedido" />
+			<h:commandButton action="#{transporte.cancelar}" value="Cancelar"  immediate="true"/>
+		</h:panelGrid>
+	</h:form>
+</body> 
+</html>

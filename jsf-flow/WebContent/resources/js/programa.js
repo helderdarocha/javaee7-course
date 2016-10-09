@@ -1,0 +1,3 @@
+function clickTheFish() {
+	alert("Fish");
+}

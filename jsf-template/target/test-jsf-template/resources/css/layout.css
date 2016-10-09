@@ -1,0 +1,27 @@
+.navbar-fixed-top .nav {
+	width: 100%;
+	background: rgb(95%,95%,95%;);
+	border: solid lightgray 1px;
+}
+.navbar-fixed-top .nav li {
+	display: inline-block;
+	margin-right: 1cm;
+}
+
+.nav li a {
+	text-decoration: none;
+}
+.nav li a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+footer {
+	border-top: solid red 2px;
+	padding-top: 5px;
+	margin-top: 10px;
+	font-size: 10pt;
+}
+
+* {font-family: sans-serif}
+h1 {color: brown}

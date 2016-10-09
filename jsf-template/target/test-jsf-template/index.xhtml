@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+
+
+	<!-- Tudo acima é ignorado -->
+
+	<ui:composition template="resources/templates/template.xhtml">
+		<!-- 1) Itens que são redefinidos vazios são removidos -->
+		<ui:define name="menu-superior"></ui:define>
+		
+		<!-- 2) Itens que nao sao redefinidos mantém o conteúdo original do template -->
+		<!-- 
+			<ui:define name="rodape"></ui:define> 
+		 -->
+
+		<!-- 3) Itens que são redefinidos com outro conteúdo substituem o conteúdo do template -->
+		<ui:define name="conteudo-pagina">
+		<p:layoutUnit position="center">
+			<ul>
+				<li><h:outputLink value="clienteTemplate1.faces">home</h:outputLink></li>
+				<li><h:outputLink value="clienteTemplate2.faces">sobre</h:outputLink></li>
+				<li><h:outputLink value="clienteTemplate3.faces">serviços</h:outputLink></li>
+			</ul>
+		</p:layoutUnit>
+		</ui:define>
+		
+		<ui:define name="titulo">Lista de exemplos</ui:define>
+
+		<ui:define name="cabecalho">
+			<h1>Lista de exemplos</h1>
+		</ui:define>
+
+	</ui:composition>
+
+	<!-- Tudo abaixo é ignorado -->
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"> 
+
+<h:head>
+    <style>
+    h1 {font-size: 12pt; font-family: sans-serif}
+    </style>
+</h:head> 
+<body> 
+	<h1>\#{cinemateca.nome}</h1>
+	<p>#{cinemateca.nome}</p>
+	
+	<h1>\#{cinemateca.filmes[2].titulo}</h1>
+	<p>#{cinemateca.filmes[2].titulo}</p>
+	
+	<h1>\#{false or true} \#{false} or \#{true} \#{123 * 111} \#{"cat"} \#{cinemateca.filmes[1].duracao * 10}</h1>
+	<p>#{false or true} #{false} or #{true} #{123 * 111} #{"cat"} #{cinemateca.filmes[1].duracao * 10}</p>
+	
+	<h1>&lt;h:outputText value="\#{false or true} or \#{false} or (\#{false} or \#{true})" /&gt;</h1>
+	<p><h:outputText value="#{false or true} or #{false} or (#{false} or #{true})" /></p>
+	
+	<h1>&lt;h:outputText value="\#{1 + 2} + \#{5} * (\#{5} - \#{3})" /&gt;</h1>
+	<p><h:outputText value="#{1 + 2} + #{5} * (#{5} - #{3})" /></p>
+	
+	<h1>\#{cinemateca.duracaoTotal()}</h1>
+	<p>#{cinemateca.duracaoTotal()}</p>
+	
+	<h1>\#{cinemateca.duracao(4)}</h1>
+	<p>#{cinemateca.duracao(4)}</p>
+	
+	<h1>\#{1 lt (4/2)} \#{4.0 >= 3} \#{100.0 == 100} \#{"100" == 100}</h1>
+	<p>#{1 lt (4/2)} #{4.0 >= 3} #{100.0 == 100} #{"100" == 100}</p>
+	
+	<h1>\#{(10*10) ne 100} \#{'aac' > 'aae'} \#{'aac' gt 'aae'} \#{'aac' lt 'aae'}</h1>
+	<p>#{(10*10) ne 100} #{'aac' > 'aae'} #{'aac' gt 'aae'} #{'aac' lt 'aae'}</p>
+	
+	<h1>\#{3 div 4} \#{10 mod 4} \#{"string".length()} \#{fn:length(cinemateca.filmes)} \#{Math.random() * 100}</h1>
+	<p>#{3 div 4} #{10 mod 4} #{"string".length()} #{fn:length(cinemateca.filmes)}</p>
+	
+	<h1>\#{pageContext.request.contextPath}</h1>
+	<p>#{pageContext.request.contextPath}</p>
+	
+	<h1>\#{header['host']}</h1>
+	<p>#{header['host']}</p>
+	
+	<h1>\#{usuario["nome"]}</h1>
+	<p>#{usuario["nome"]}</p>
+	
+</body> 
+</html>
