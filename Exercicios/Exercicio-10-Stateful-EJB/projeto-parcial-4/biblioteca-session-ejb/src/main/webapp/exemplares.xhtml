@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Exemplares</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .exemplares {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .exemplares th {
+                background: lightblue;
+            }
+            .exemplares tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Lista de exemplares disponíveis</h1>
+        <h:form>
+            <h:dataTable value="#{bibliotecaBean.exemplares}" var="exemplar" styleClass="exemplares">
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    #{exemplar.id}</h:column>
+                <h:column>
+                    <f:facet name="header">Título</f:facet>
+                    #{exemplar.livro.titulo}</h:column>
+                <h:column>
+                    <f:facet name="header">Editora</f:facet>
+                    #{exemplar.livro.editora.nome}</h:column>
+                <h:column>
+                    <f:facet name="header">Autores</f:facet>
+                    <ui:repeat value="#{exemplar.livro.autores}" var="autor" varStatus="status">
+                        #{autor.nome}
+                        <h:outputText value=", "  rendered="#{not status.last}"/>
+                    </ui:repeat>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Tipo</f:facet>
+                    #{exemplar.tipo}</h:column>
+                <h:column>
+                    <f:facet name="header">Disponível</f:facet>
+                    #{exemplar.disponivel}</h:column>
+                <h:column>
+                    <f:facet name="header">Emprestado a</f:facet>
+                    #{exemplar.usuario.nome}</h:column>
+                <h:column>
+                    <h:commandButton action="#{exemplarBean.delete(exemplar)}" value="Remover" />
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{exemplarBean.edit(exemplar)}" value="Editar" />
+                </h:column>
+            </h:dataTable>
+
+            <h:commandButton action="exemplar.xhtml" value="Inserir" />
+        </h:form>
+    </h:body>
+</html>
+

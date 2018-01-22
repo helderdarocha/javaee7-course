@@ -1,0 +1,15 @@
+biblioteca/ejb/LivroService.class
+biblioteca/ejb/AutorEJB.class
+biblioteca/jpa/Livro.class
+biblioteca/ejb/EditoraService.class
+biblioteca/ejb/EditoraEJB.class
+biblioteca/ejb/AutorService.class
+biblioteca/web/BibliotecaBean.class
+biblioteca/web/EditoraBean.class
+biblioteca/web/LivroBean.class
+biblioteca/web/jsf/EditoraConverter.class
+biblioteca/jpa/Autor.class
+biblioteca/ejb/LivroEJB.class
+biblioteca/jpa/Editora.class
+biblioteca/web/jsf/AutorConverter.class
+biblioteca/web/AutorBean.class

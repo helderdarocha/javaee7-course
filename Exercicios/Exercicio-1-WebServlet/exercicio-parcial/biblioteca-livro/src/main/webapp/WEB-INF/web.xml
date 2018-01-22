@@ -1,0 +1,27 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:web="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+
+        <!-- Lista de arquivos que serão usados caso a URL termine em / -->
+	<welcome-file-list>
+		<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
+
+        <!-- Configuração do Faces Servlet -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+        <!-- Mapeamentos de URL para o Faces Servlet -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+        
+        <!-- Exercício: configurar e mapear o servlet - pode ser feito aqui ou
+             usando @WebServlet antes da classe. O Eclipse/Netbeans pode 
+             gerar o mapeamento automaticamente. -->
+
+</web-app>

@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>Biblioteca</title>
+    </h:head>
+    <h:body>
+        <h2>Biblioteca - EJB/CDI/JPA</h2>
+        <h3>Bases de dados</h3>
+        <ul>
+            <li><h:outputLink value="#{request.contextPath}/livros.xhtml">Livros</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/autores.xhtml">Autores</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/editoras.xhtml">Editoras</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/assuntos.xhtml">Assuntos</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/usuarios.xhtml">Usuários</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/exemplares.xhtml">Exemplares</h:outputLink></li>
+        </ul>
+        <h3>Testes</h3>
+        <ul>
+            <li><h:outputLink value="#{request.contextPath}/setup-testes.xhtml">Criar ambiente de testes</h:outputLink></li>
+            <li><h:outputLink value="#{request.contextPath}/queries-9.xhtml">Queries - Exercício 9</h:outputLink></li>
+        </ul>
+        <h:panelGrid rendered="#{configBean.appNova}">
+            <h:form>
+            <h3>Configuração</h3>
+            <ul>
+                <li><h:commandLink action="#{configBean.configure}">Criar tabela de assuntos</h:commandLink></li>
+            </ul>
+            </h:form>
+        </h:panelGrid>
+    </h:body>
+</html>

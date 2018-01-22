@@ -1,0 +1,1112 @@
+<entries> 
+   <entry class="000" summary="1">Computer science, information &amp; general works</entry>
+   <entry class="100" summary="1">Philosophy &amp; psychology</entry>
+   <entry class="200" summary="1">Religion</entry>
+   <entry class="300" summary="1">Social sciences</entry>
+   <entry class="400" summary="1">Language</entry>
+   <entry class="500" summary="1">Science</entry>
+   <entry class="600" summary="1">Technology</entry>
+   <entry class="700" summary="1">Arts &amp; recreation</entry>
+   <entry class="800" summary="1">Literature</entry>
+   <entry class="900" summary="1">History &amp; geography</entry> 
+   <entry class="000" summary="2">Computer science, knowledge &amp; systems</entry>
+   <entry class="010" summary="2">Bibliographies</entry>
+   <entry class="020" summary="2">Library &amp; information sciences</entry>
+   <entry class="030" summary="2">Encyclopedias &amp; books of facts</entry>
+   <entry class="040" summary="2">[Unassigned]</entry>
+   <entry class="050" summary="2">Magazines, journals &amp; serials</entry>
+   <entry class="060" summary="2">Associations, organizations &amp; museums</entry>
+   <entry class="070" summary="2">News media, journalism &amp; publishing</entry>
+   <entry class="080" summary="2">Quotations</entry>
+   <entry class="090" summary="2">Manuscripts &amp; rare books</entry>
+   <entry class="100" summary="2">Philosophy</entry>
+   <entry class="110" summary="2">Metaphysics</entry>
+   <entry class="120" summary="2">Epistemology</entry>
+   <entry class="130" summary="2">Parapsychology &amp; occultism</entry>
+   <entry class="140" summary="2">Philosophical schools of thought</entry>
+   <entry class="150" summary="2">Psychology</entry>
+   <entry class="160" summary="2">Logic</entry>
+   <entry class="170" summary="2">Ethics</entry>
+   <entry class="180" summary="2">Ancient, medieval &amp; eastern philosophy</entry>
+   <entry class="190" summary="2">Modern western philosophy</entry>
+   <entry class="200" summary="2">Religion</entry>
+   <entry class="210" summary="2">Philosophy &amp; theory of religion</entry>
+   <entry class="220" summary="2">The Bible</entry>
+   <entry class="230" summary="2">Christianity &amp; Christian theology</entry>
+   <entry class="240" summary="2">Christian practice &amp; observance</entry>
+   <entry class="250" summary="2">Christian pastoral practice &amp; religious orders</entry>
+   <entry class="260" summary="2">Christian organization, social work &amp; worship</entry>
+   <entry class="270" summary="2">History of Christianity</entry>
+   <entry class="280" summary="2">Christian denominations</entry>
+   <entry class="290" summary="2">Other religions</entry>
+   <entry class="300" summary="2">Social sciences, sociology &amp; anthropology</entry>
+   <entry class="310" summary="2">Statistics</entry>
+   <entry class="320" summary="2">Political science</entry>
+   <entry class="330" summary="2">Economics</entry>
+   <entry class="340" summary="2">Law</entry>
+   <entry class="350" summary="2">Public administration &amp; military science</entry>
+   <entry class="360" summary="2">Social problems &amp; social services</entry>
+   <entry class="370" summary="2">Education</entry>
+   <entry class="380" summary="2">Commerce, communications &amp; transportation</entry>
+   <entry class="390" summary="2">Customs, etiquette &amp; folklore</entry>
+   <entry class="400" summary="2">Language</entry>
+   <entry class="410" summary="2">Linguistics</entry>
+   <entry class="420" summary="2">English &amp; Old English languages</entry>
+   <entry class="430" summary="2">German &amp; related languages</entry>
+   <entry class="440" summary="2">French &amp; related languages</entry>
+   <entry class="450" summary="2">Italian, Romanian &amp; related languages</entry>
+   <entry class="460" summary="2">Spanish &amp; Portuguese languages</entry>
+   <entry class="470" summary="2">Latin &amp; Italic languages</entry>
+   <entry class="480" summary="2">Classical &amp; modern Greek languages</entry>
+   <entry class="490" summary="2">Other languages</entry>
+   <entry class="500" summary="2">Science</entry>
+   <entry class="510" summary="2">Mathematics</entry>
+   <entry class="520" summary="2">Astronomy</entry>
+   <entry class="530" summary="2">Physics</entry>
+   <entry class="540" summary="2">Chemistry</entry>
+   <entry class="550" summary="2">Earth sciences &amp; geology</entry>
+   <entry class="560" summary="2">Fossils &amp; prehistoric life</entry>
+   <entry class="570" summary="2">Life sciences; biology</entry>
+   <entry class="580" summary="2">Plants (Botany)</entry>
+   <entry class="590" summary="2">Animals (Zoology)</entry>
+   <entry class="600" summary="2">Technology</entry>
+   <entry class="610" summary="2">Medicine &amp; health</entry>
+   <entry class="620" summary="2">Engineering</entry>
+   <entry class="630" summary="2">Agriculture</entry>
+   <entry class="640" summary="2">Home &amp; family management</entry>
+   <entry class="650" summary="2">Management &amp; public relations</entry>
+   <entry class="660" summary="2">Chemical engineering</entry>
+   <entry class="670" summary="2">Manufacturing</entry>
+   <entry class="680" summary="2">Manufacture for specific uses</entry>
+   <entry class="690" summary="2">Building &amp; construction</entry>
+   <entry class="700" summary="2">Arts</entry>
+   <entry class="710" summary="2">Landscaping &amp; area planning</entry>
+   <entry class="720" summary="2">Architecture</entry>
+   <entry class="730" summary="2">Sculpture, ceramics &amp; metalwork</entry>
+   <entry class="740" summary="2">Drawing &amp; decorative arts</entry>
+   <entry class="750" summary="2">Painting</entry>
+   <entry class="760" summary="2">Graphic arts</entry>
+   <entry class="770" summary="2">Photography &amp; computer art</entry>
+   <entry class="780" summary="2">Music</entry>
+   <entry class="790" summary="2">Sports, games &amp; entertainment</entry>
+   <entry class="800" summary="2">Literature, rhetoric &amp; criticism</entry>
+   <entry class="810" summary="2">American literature in English</entry>
+   <entry class="820" summary="2">English &amp; Old English literatures</entry>
+   <entry class="830" summary="2">German &amp; related literatures</entry>
+   <entry class="840" summary="2">French &amp; related literatures</entry>
+   <entry class="850" summary="2">Italian, Romanian &amp; related literatures</entry>
+   <entry class="860" summary="2">Spanish &amp; Portuguese literatures</entry>
+   <entry class="870" summary="2">Latin &amp; Italic literatures</entry>
+   <entry class="880" summary="2">Classical &amp; modern Greek literatures</entry>
+   <entry class="890" summary="2">Other literatures</entry>
+   <entry class="900" summary="2">History</entry>
+   <entry class="910" summary="2">Geography &amp; travel</entry>
+   <entry class="920" summary="2">Biography &amp; genealogy</entry>
+   <entry class="930" summary="2">History of ancient world (to ca. 499)</entry>
+   <entry class="940" summary="2">History of Europe</entry>
+   <entry class="950" summary="2">History of Asia</entry>
+   <entry class="960" summary="2">History of Africa</entry>
+   <entry class="970" summary="2">History of North America</entry>
+   <entry class="980" summary="2">History of South America</entry>
+   <entry class="990" summary="2">History of other areas</entry>
+   <entry class="000" summary="3">Computer science, information &amp; general works</entry>
+   <entry class="001" summary="3">Knowledge</entry>
+   <entry class="002" summary="3">The book</entry>
+   <entry class="003" summary="3">Systems</entry>
+   <entry class="004" summary="3">Data processing &amp; computer science</entry>
+   <entry class="005" summary="3">Computer programming, programs &amp; data</entry>
+   <entry class="006" summary="3">Special computer methods</entry>
+   <entry class="007" summary="3">[Unassigned]</entry>
+   <entry class="008" summary="3">[Unassigned]</entry>
+   <entry class="009" summary="3">[Unassigned]</entry>
+   <entry class="010" summary="3">Bibliography</entry>
+   <entry class="011" summary="3">Bibliographies</entry>
+   <entry class="012" summary="3">Bibliographies of individuals</entry>
+   <entry class="013" summary="3">[Unassigned]</entry>
+   <entry class="014" summary="3">Bibliographies of anonymous &amp; pseudonymous works</entry>
+   <entry class="015" summary="3">Bibliographies of works from specific places</entry>
+   <entry class="016" summary="3">Bibliographies of works on specific subjects</entry>
+   <entry class="017" summary="3">General subject catalogs</entry>
+   <entry class="018" summary="3">Catalogs arranged by author, date, etc.</entry>
+   <entry class="019" summary="3">Dictionary catalogs</entry>
+   <entry class="020" summary="3">Library &amp; information sciences</entry>
+   <entry class="021" summary="3">Library relationships</entry>
+   <entry class="022" summary="3">Administration of physical plant</entry>
+   <entry class="023" summary="3">Personnel management</entry>
+   <entry class="024" summary="3">[Unassigned]</entry>
+   <entry class="025" summary="3">Library operations</entry>
+   <entry class="026" summary="3">Libraries for specific subjects</entry>
+   <entry class="027" summary="3">General libraries</entry>
+   <entry class="028" summary="3">Reading &amp; use of other information media</entry>
+   <entry class="029" summary="3">[Unassigned]</entry>
+   <entry class="030" summary="3">General encyclopedic works</entry>
+   <entry class="031" summary="3">Encyclopedias in American English</entry>
+   <entry class="032" summary="3">Encyclopedias in English</entry>
+   <entry class="033" summary="3">Encyclopedias in other Germanic languages</entry>
+   <entry class="034" summary="3">Encyclopedias in French, Occitan &amp; Catalan</entry>
+   <entry class="035" summary="3">Encyclopedias in Italian, Romanian &amp; related languages</entry>
+   <entry class="036" summary="3">Encyclopedias in Spanish &amp; Portuguese</entry>
+   <entry class="037" summary="3">Encyclopedias in Slavic languages</entry>
+   <entry class="038" summary="3">Encyclopedias in Scandinavian languages</entry>
+   <entry class="039" summary="3">Encyclopedias in other languages</entry>
+   <entry class="040" summary="3">[Unassigned]</entry>
+   <entry class="041" summary="3">[Unassigned]</entry>
+   <entry class="042" summary="3">[Unassigned]</entry>
+   <entry class="043" summary="3">[Unassigned]</entry>
+   <entry class="044" summary="3">[Unassigned]</entry>
+   <entry class="045" summary="3">[Unassigned]</entry>
+   <entry class="046" summary="3">[Unassigned]</entry>
+   <entry class="047" summary="3">[Unassigned]</entry>
+   <entry class="048" summary="3">[Unassigned]</entry>
+   <entry class="049" summary="3">[Unassigned]</entry>
+   <entry class="050" summary="3">General serial publications</entry>
+   <entry class="051" summary="3">Serials in American English</entry>
+   <entry class="052" summary="3">Serials in English</entry>
+   <entry class="053" summary="3">Serials in other Germanic languages</entry>
+   <entry class="054" summary="3">Serials in French, Occitan &amp; Catalan</entry>
+   <entry class="055" summary="3">Serials in Italian, Romanian &amp; related languages</entry>
+   <entry class="056" summary="3">Serials in Spanish &amp; Portuguese</entry>
+   <entry class="057" summary="3">Serials in Slavic languages</entry>
+   <entry class="058" summary="3">Serials in Scandinavian languages</entry>
+   <entry class="059" summary="3">Serials in other languages</entry>
+   <entry class="060" summary="3">General organizations &amp; museum science</entry>
+   <entry class="061" summary="3">Organizations in North America</entry>
+   <entry class="062" summary="3">Organizations in British Isles; in England</entry>
+   <entry class="063" summary="3">Organizations in central Europe; in Germany</entry>
+   <entry class="064" summary="3">Organizations in France &amp; Monaco</entry>
+   <entry class="065" summary="3">Organizations in Italy &amp; adjacent islands</entry>
+   <entry class="066" summary="3">Organizations in Iberian Peninsula &amp; adjacent islands</entry>
+   <entry class="067" summary="3">Organizations in eastern Europe; in Russia</entry>
+   <entry class="068" summary="3">Organizations in other geographic areas</entry>
+   <entry class="069" summary="3">Museum science</entry>
+   <entry class="070" summary="3">News media, journalism &amp; publishing</entry>
+   <entry class="071" summary="3">Newspapers in North America</entry>
+   <entry class="072" summary="3">Newspapers in British Isles; in England</entry>
+   <entry class="073" summary="3">Newspapers in central Europe; in Germany</entry>
+   <entry class="074" summary="3">Newspapers in France &amp; Monaco</entry>
+   <entry class="075" summary="3">Newspapers in Italy &amp; adjacent islands</entry>
+   <entry class="076" summary="3">Newspapers in Iberian Peninsula &amp; adjacent islands</entry>
+   <entry class="077" summary="3">Newspapers in eastern Europe; in Russia</entry>
+   <entry class="078" summary="3">Newspapers in Scandinavia</entry>
+   <entry class="079" summary="3">Newspapers in other geographic areas</entry>
+   <entry class="080" summary="3">General collections</entry>
+   <entry class="081" summary="3">Collections in American English</entry>
+   <entry class="082" summary="3">Collections in English</entry>
+   <entry class="083" summary="3">Collections in other Germanic languages</entry>
+   <entry class="084" summary="3">Collections in French, Occitan &amp; Catalan</entry>
+   <entry class="085" summary="3">Collections in Italian, Romanian &amp; related languages</entry>
+   <entry class="086" summary="3">Collections in Spanish &amp; Portuguese</entry>
+   <entry class="087" summary="3">Collections in Slavic languages</entry>
+   <entry class="088" summary="3">Collections in Scandinavian languages</entry>
+   <entry class="089" summary="3">Collections in other languages</entry>
+   <entry class="090" summary="3">Manuscripts &amp; rare books</entry>
+   <entry class="091" summary="3">Manuscripts</entry>
+   <entry class="092" summary="3">Block books</entry>
+   <entry class="093" summary="3">Incunabula</entry>
+   <entry class="094" summary="3">Printed books</entry>
+   <entry class="095" summary="3">Books notable for bindings</entry>
+   <entry class="096" summary="3">Books notable for illustrations</entry>
+   <entry class="097" summary="3">Books notable for ownership or origin</entry>
+   <entry class="098" summary="3">Prohibited works, forgeries &amp; hoaxes</entry>
+   <entry class="099" summary="3">Books notable for format</entry>
+   <entry class="100" summary="3">Philosophy &amp; psychology</entry>
+   <entry class="101" summary="3">Theory of philosophy</entry>
+   <entry class="102" summary="3">Miscellany</entry>
+   <entry class="103" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="104" summary="3">[Unassigned]</entry>
+   <entry class="105" summary="3">Serial publications</entry>
+   <entry class="106" summary="3">Organizations &amp; management</entry>
+   <entry class="107" summary="3">Education, research &amp; related topics</entry>
+   <entry class="108" summary="3">Kinds of persons treatment</entry>
+   <entry class="109" summary="3">Historical &amp; collected persons treatment</entry>
+   <entry class="110" summary="3">Metaphysics</entry>
+   <entry class="111" summary="3">Ontology</entry>
+   <entry class="112" summary="3">[Unassigned]</entry>
+   <entry class="113" summary="3">Cosmology</entry>
+   <entry class="114" summary="3">Space</entry>
+   <entry class="115" summary="3">Time</entry>
+   <entry class="116" summary="3">Change</entry>
+   <entry class="117" summary="3">Structure</entry>
+   <entry class="118" summary="3">Force &amp; energy</entry>
+   <entry class="119" summary="3">Number &amp; quantity</entry>
+   <entry class="120" summary="3">Epistemology, causation &amp; humankind</entry>
+   <entry class="121" summary="3">Epistemology</entry>
+   <entry class="122" summary="3">Causation</entry>
+   <entry class="123" summary="3">Determinism &amp; indeterminism</entry>
+   <entry class="124" summary="3">Teleology</entry>
+   <entry class="125" summary="3">[Unassigned]</entry>
+   <entry class="126" summary="3">The self</entry>
+   <entry class="127" summary="3">The unconscious &amp; the subconscious</entry>
+   <entry class="128" summary="3">Humankind</entry>
+   <entry class="129" summary="3">Origin &amp; destiny of individual souls</entry>
+   <entry class="130" summary="3">Parapsychology &amp; occultism</entry>
+   <entry class="131" summary="3">Parapsychological &amp; occult methods</entry>
+   <entry class="132" summary="3">[Unassigned]</entry>
+   <entry class="133" summary="3">Specific topics in parapsychology &amp; occultism</entry>
+   <entry class="134" summary="3">[Unassigned]</entry>
+   <entry class="135" summary="3">Dreams &amp; mysteries</entry>
+   <entry class="136" summary="3">[Unassigned]</entry>
+   <entry class="137" summary="3">Divinatory graphology</entry>
+   <entry class="138" summary="3">Physiognomy</entry>
+   <entry class="139" summary="3">Phrenology</entry>
+   <entry class="140" summary="3">Specific philosophical schools</entry>
+   <entry class="141" summary="3">Idealism &amp; related systems</entry>
+   <entry class="142" summary="3">Critical philosophy</entry>
+   <entry class="143" summary="3">Bergsonism &amp; intuitionism</entry>
+   <entry class="144" summary="3">Humanism &amp; related systems</entry>
+   <entry class="145" summary="3">Sensationalism</entry>
+   <entry class="146" summary="3">Naturalism &amp; related systems</entry>
+   <entry class="147" summary="3">Pantheism &amp; related systems</entry>
+   <entry class="148" summary="3">Eclecticism, liberalism &amp; traditionalism</entry>
+   <entry class="149" summary="3">Other philosophical systems</entry>
+   <entry class="150" summary="3">Psychology</entry>
+   <entry class="151" summary="3">[Unassigned]</entry>
+   <entry class="152" summary="3">Perception, movement, emotions &amp; drives</entry>
+   <entry class="153" summary="3">Mental processes &amp; intelligence</entry>
+   <entry class="154" summary="3">Subconscious &amp; altered states</entry>
+   <entry class="155" summary="3">Differential &amp; developmental psychology</entry>
+   <entry class="156" summary="3">Comparative psychology</entry>
+   <entry class="157" summary="3">[Unassigned]</entry>
+   <entry class="158" summary="3">Applied psychology</entry>
+   <entry class="159" summary="3">[Unassigned]</entry>
+   <entry class="160" summary="3">Logic</entry>
+   <entry class="161" summary="3">Induction</entry>
+   <entry class="162" summary="3">Deduction</entry>
+   <entry class="163" summary="3">[Unassigned]</entry>
+   <entry class="164" summary="3">[Unassigned]</entry>
+   <entry class="165" summary="3">Fallacies &amp; sources of error</entry>
+   <entry class="166" summary="3">Syllogisms</entry>
+   <entry class="167" summary="3">Hypotheses</entry>
+   <entry class="168" summary="3">Argument &amp; persuasion</entry>
+   <entry class="169" summary="3">Analogy</entry>
+   <entry class="170" summary="3">Ethics</entry>
+   <entry class="171" summary="3">Ethical systems</entry>
+   <entry class="172" summary="3">Political ethics</entry>
+   <entry class="173" summary="3">Ethics of family relationships</entry>
+   <entry class="174" summary="3">Occupational ethics</entry>
+   <entry class="175" summary="3">Ethics of recreation &amp; leisure</entry>
+   <entry class="176" summary="3">Ethics of sex &amp; reproduction</entry>
+   <entry class="177" summary="3">Ethics of social relations</entry>
+   <entry class="178" summary="3">Ethics of consumption</entry>
+   <entry class="179" summary="3">Other ethical norms</entry>
+   <entry class="180" summary="3">Ancient, medieval &amp; eastern philosophy</entry>
+   <entry class="181" summary="3">Eastern philosophy</entry>
+   <entry class="182" summary="3">Pre-Socratic Greek philosophies</entry>
+   <entry class="183" summary="3">Socratic &amp; related philosophies</entry>
+   <entry class="184" summary="3">Platonic philosophy</entry>
+   <entry class="185" summary="3">Aristotelian philosophy</entry>
+   <entry class="186" summary="3">Skeptic &amp; Neoplatonic philosophies</entry>
+   <entry class="187" summary="3">Epicurean philosophy</entry>
+   <entry class="188" summary="3">Stoic philosophy</entry>
+   <entry class="189" summary="3">Medieval western philosophy</entry>
+   <entry class="190" summary="3">Modern western philosophy</entry>
+   <entry class="191" summary="3">Philosophy of United States &amp; Canada</entry>
+   <entry class="192" summary="3">Philosophy of British Isles</entry>
+   <entry class="193" summary="3">Philosophy of Germany &amp; Austria</entry>
+   <entry class="194" summary="3">Philosophy of France</entry>
+   <entry class="195" summary="3">Philosophy of Italy</entry>
+   <entry class="196" summary="3">Philosophy of Spain &amp; Portugal</entry>
+   <entry class="197" summary="3">Philosophy of former Soviet Union</entry>
+   <entry class="198" summary="3">Philosophy of Scandinavia</entry>
+   <entry class="199" summary="3">Philosophy in other geographic areas</entry>
+   <entry class="200" summary="3">Religion</entry>
+   <entry class="201" summary="3">Religious mythology &amp; social theology</entry>
+   <entry class="202" summary="3">Doctrines</entry>
+   <entry class="203" summary="3">Public worship &amp; other practices</entry>
+   <entry class="204" summary="3">Religious experience, life &amp; practice</entry>
+   <entry class="205" summary="3">Religious ethics</entry>
+   <entry class="206" summary="3">Leaders &amp; organization</entry>
+   <entry class="207" summary="3">Missions &amp; religious education</entry>
+   <entry class="208" summary="3">Sources</entry>
+   <entry class="209" summary="3">Sects &amp; reform movements</entry>
+   <entry class="210" summary="3">Philosophy &amp; theory of religion</entry>
+   <entry class="211" summary="3">Concepts of God</entry>
+   <entry class="212" summary="3">Existence, knowability &amp; attributes of God</entry>
+   <entry class="213" summary="3">Creation</entry>
+   <entry class="214" summary="3">Theodicy</entry>
+   <entry class="215" summary="3">Science &amp; religion</entry>
+   <entry class="216" summary="3">[Unassigned]</entry>
+   <entry class="217" summary="3">[Unassigned]</entry>
+   <entry class="218" summary="3">Humankind</entry>
+   <entry class="219" summary="3">[Unassigned]</entry>
+   <entry class="220" summary="3">Bible</entry>
+   <entry class="221" summary="3">Old Testament (Tanakh)</entry>
+   <entry class="222" summary="3">Historical books of Old Testament</entry>
+   <entry class="223" summary="3">Poetic books of Old Testament</entry>
+   <entry class="224" summary="3">Prophetic books of Old Testament</entry>
+   <entry class="225" summary="3">New Testament</entry>
+   <entry class="226" summary="3">Gospels &amp; Acts</entry>
+   <entry class="227" summary="3">Epistles</entry>
+   <entry class="228" summary="3">Revelation (Apocalypse)</entry>
+   <entry class="229" summary="3">Apocrypha &amp; pseudepigrapha</entry>
+   <entry class="230" summary="3">Christianity &amp; Christian theology</entry>
+   <entry class="231" summary="3">God</entry>
+   <entry class="232" summary="3">Jesus Christ &amp; his family</entry>
+   <entry class="233" summary="3">Humankind</entry>
+   <entry class="234" summary="3">Salvation &amp; grace</entry>
+   <entry class="235" summary="3">Spiritual beings</entry>
+   <entry class="236" summary="3">Eschatology</entry>
+   <entry class="237" summary="3">[Unassigned]</entry>
+   <entry class="238" summary="3">Creeds &amp; catechisms</entry>
+   <entry class="239" summary="3">Apologetics &amp; polemics</entry>
+   <entry class="240" summary="3">Christian moral &amp; devotional theology</entry>
+   <entry class="241" summary="3">Christian ethics</entry>
+   <entry class="242" summary="3">Devotional literature</entry>
+   <entry class="243" summary="3">Evangelistic writings for individuals</entry>
+   <entry class="244" summary="3">[Unassigned]</entry>
+   <entry class="245" summary="3">[Unassigned]</entry>
+   <entry class="246" summary="3">Use of art in Christianity</entry>
+   <entry class="247" summary="3">Church furnishings &amp; articles</entry>
+   <entry class="248" summary="3">Christian experience, practice &amp; life</entry>
+   <entry class="249" summary="3">Christian observances in family life</entry>
+   <entry class="250" summary="3">Christian orders &amp; local church</entry>
+   <entry class="251" summary="3">Preaching</entry>
+   <entry class="252" summary="3">Texts of sermons</entry>
+   <entry class="253" summary="3">Pastoral office &amp; work</entry>
+   <entry class="254" summary="3">Parish administration</entry>
+   <entry class="255" summary="3">Religious congregations &amp; orders</entry>
+   <entry class="256" summary="3">[Unassigned]</entry>
+   <entry class="257" summary="3">[Unassigned]</entry>
+   <entry class="258" summary="3">[Unassigned]</entry>
+   <entry class="259" summary="3">Pastoral care of families &amp; kinds of persons</entry>
+   <entry class="260" summary="3">Social &amp; ecclesiastical theology</entry>
+   <entry class="261" summary="3">Social theology</entry>
+   <entry class="262" summary="3">Ecclesiology</entry>
+   <entry class="263" summary="3">Days, times &amp; places of observance</entry>
+   <entry class="264" summary="3">Public worship</entry>
+   <entry class="265" summary="3">Sacraments, other rites &amp; acts</entry>
+   <entry class="266" summary="3">Missions</entry>
+   <entry class="267" summary="3">Associations for religious work</entry>
+   <entry class="268" summary="3">Religious education</entry>
+   <entry class="269" summary="3">Spiritual renewal</entry>
+   <entry class="270" summary="3">History of Christianity &amp; Christian church</entry>
+   <entry class="271" summary="3">Religious orders in church history</entry>
+   <entry class="272" summary="3">Persecutions in church history</entry>
+   <entry class="273" summary="3">Doctrinal controversies &amp; heresies</entry>
+   <entry class="274" summary="3">History of Christianity in Europe</entry>
+   <entry class="275" summary="3">History of Christianity in Asia</entry>
+   <entry class="276" summary="3">History of Christianity in Africa</entry>
+   <entry class="277" summary="3">History of Christianity in North America</entry>
+   <entry class="278" summary="3">History of Christianity in South America</entry>
+   <entry class="279" summary="3">History of Christianity in other areas</entry>
+   <entry class="280" summary="3">Christian denominations &amp; sects</entry>
+   <entry class="281" summary="3">Early church &amp; Eastern churches</entry>
+   <entry class="282" summary="3">Roman Catholic Church</entry>
+   <entry class="283" summary="3">Anglican churches</entry>
+   <entry class="284" summary="3">Protestants of Continental origin</entry>
+   <entry class="285" summary="3">Presbyterian, Reformed &amp; Congregational</entry>
+   <entry class="286" summary="3">Baptist, Disciples of Christ &amp; Adventist</entry>
+   <entry class="287" summary="3">Methodist &amp; related churches</entry>
+   <entry class="288" summary="3">[Unassigned]</entry>
+   <entry class="289" summary="3">Other denominations &amp; sects</entry>
+   <entry class="290" summary="3">Other religions</entry>
+   <entry class="291" summary="3">[Unassigned]</entry>
+   <entry class="292" summary="3">Greek &amp; Roman religion</entry>
+   <entry class="293" summary="3">Germanic religion</entry>
+   <entry class="294" summary="3">Religions of Indic origin</entry>
+   <entry class="295" summary="3">Zoroastrianism</entry>
+   <entry class="296" summary="3">Judaism</entry>
+   <entry class="297" summary="3">Islam, Babism &amp; Bahai Faith</entry>
+   <entry class="298" summary="3">(Optional number)</entry>
+   <entry class="299" summary="3">Religions not provided for elsewhere</entry>
+   <entry class="300" summary="3">Social sciences</entry>
+   <entry class="301" summary="3">Sociology &amp; anthropology</entry>
+   <entry class="302" summary="3">Social interaction</entry>
+   <entry class="303" summary="3">Social processes</entry>
+   <entry class="304" summary="3">Factors affecting social behavior</entry>
+   <entry class="305" summary="3">Social groups</entry>
+   <entry class="306" summary="3">Culture &amp; institutions</entry>
+   <entry class="307" summary="3">Communities</entry>
+   <entry class="308" summary="3">[Unassigned]</entry>
+   <entry class="309" summary="3">[Unassigned]</entry>
+   <entry class="310" summary="3">Collections of general statistics</entry>
+   <entry class="311" summary="3">[Unassigned]</entry>
+   <entry class="312" summary="3">[Unassigned]</entry>
+   <entry class="313" summary="3">[Unassigned]</entry>
+   <entry class="314" summary="3">General statistics of Europe</entry>
+   <entry class="315" summary="3">General statistics of Asia</entry>
+   <entry class="316" summary="3">General statistics of Africa</entry>
+   <entry class="317" summary="3">General statistics of North America</entry>
+   <entry class="318" summary="3">General statistics of South America</entry>
+   <entry class="319" summary="3">General statistics of other areas</entry>
+   <entry class="320" summary="3">Political science</entry>
+   <entry class="321" summary="3">Systems of governments &amp; states</entry>
+   <entry class="322" summary="3">Relation of state to organized groups</entry>
+   <entry class="323" summary="3">Civil &amp; political rights</entry>
+   <entry class="324" summary="3">The political process</entry>
+   <entry class="325" summary="3">International migration &amp; colonization</entry>
+   <entry class="326" summary="3">Slavery &amp; emancipation</entry>
+   <entry class="327" summary="3">International relations</entry>
+   <entry class="328" summary="3">The legislative process</entry>
+   <entry class="329" summary="3">[Unassigned]</entry>
+   <entry class="330" summary="3">Economics</entry>
+   <entry class="331" summary="3">Labor economics</entry>
+   <entry class="332" summary="3">Financial economics</entry>
+   <entry class="333" summary="3">Economics of land &amp; energy</entry>
+   <entry class="334" summary="3">Cooperatives</entry>
+   <entry class="335" summary="3">Socialism &amp; related systems</entry>
+   <entry class="336" summary="3">Public finance</entry>
+   <entry class="337" summary="3">International economics</entry>
+   <entry class="338" summary="3">Production</entry>
+   <entry class="339" summary="3">Macroeconomics &amp; related topics</entry>
+   <entry class="340" summary="3">Law</entry>
+   <entry class="341" summary="3">Law of nations</entry>
+   <entry class="342" summary="3">Constitutional &amp; administrative law</entry>
+   <entry class="343" summary="3">Military, tax, trade &amp; industrial law</entry>
+   <entry class="344" summary="3">Labor, social, education &amp; cultural law</entry>
+   <entry class="345" summary="3">Criminal law</entry>
+   <entry class="346" summary="3">Private law</entry>
+   <entry class="347" summary="3">Civil procedure &amp; courts</entry>
+   <entry class="348" summary="3">Laws, regulations &amp; cases</entry>
+   <entry class="349" summary="3">Law of specific jurisdictions &amp; areas</entry>
+   <entry class="350" summary="3">Public administration &amp; military science</entry>
+   <entry class="351" summary="3">Public administration</entry>
+   <entry class="352" summary="3">General considerations of public administration</entry>
+   <entry class="353" summary="3">Specific fields of public administration</entry>
+   <entry class="354" summary="3">Administration of economy &amp; environment</entry>
+   <entry class="355" summary="3">Military science</entry>
+   <entry class="356" summary="3">Infantry forces &amp; warfare</entry>
+   <entry class="357" summary="3">Mounted forces &amp; warfare</entry>
+   <entry class="358" summary="3">Air &amp; other specialized forces</entry>
+   <entry class="359" summary="3">Sea forces &amp; warfare</entry>
+   <entry class="360" summary="3">Social problems &amp; services; associations</entry>
+   <entry class="361" summary="3">Social problems &amp; social welfare in general</entry>
+   <entry class="362" summary="3">Social welfare problems &amp; services</entry>
+   <entry class="363" summary="3">Other social problems &amp; services</entry>
+   <entry class="364" summary="3">Criminology</entry>
+   <entry class="365" summary="3">Penal &amp; related institutions</entry>
+   <entry class="366" summary="3">Associations</entry>
+   <entry class="367" summary="3">General clubs</entry>
+   <entry class="368" summary="3">Insurance</entry>
+   <entry class="369" summary="3">Miscellaneous kinds of associations</entry>
+   <entry class="370" summary="3">Education</entry>
+   <entry class="371" summary="3">Schools &amp; their activities; special education</entry>
+   <entry class="372" summary="3">Elementary education</entry>
+   <entry class="373" summary="3">Secondary education</entry>
+   <entry class="374" summary="3">Adult education</entry>
+   <entry class="375" summary="3">Curricula</entry>
+   <entry class="376" summary="3">[Unassigned]</entry>
+   <entry class="377" summary="3">[Unassigned]</entry>
+   <entry class="378" summary="3">Higher education</entry>
+   <entry class="379" summary="3">Public policy issues in education</entry>
+   <entry class="380" summary="3">Commerce, communications &amp; transportation</entry>
+   <entry class="381" summary="3">Commerce</entry>
+   <entry class="382" summary="3">International commerce</entry>
+   <entry class="383" summary="3">Postal communication</entry>
+   <entry class="384" summary="3">Communications; telecommunication</entry>
+   <entry class="385" summary="3">Railroad transportation</entry>
+   <entry class="386" summary="3">Inland waterway &amp; ferry transportation</entry>
+   <entry class="387" summary="3">Water, air &amp; space transportation</entry>
+   <entry class="388" summary="3">Transportation; ground transportation</entry>
+   <entry class="389" summary="3">Metrology &amp; standardization</entry>
+   <entry class="390" summary="3">Customs, etiquette &amp; folklore</entry>
+   <entry class="391" summary="3">Costume &amp; personal appearance</entry>
+   <entry class="392" summary="3">Customs of life cycle &amp; domestic life</entry>
+   <entry class="393" summary="3">Death customs</entry>
+   <entry class="394" summary="3">General customs</entry>
+   <entry class="395" summary="3">Etiquette (Manners)</entry>
+   <entry class="396" summary="3">[Unassigned]</entry>
+   <entry class="397" summary="3">[Unassigned]</entry>
+   <entry class="398" summary="3">Folklore</entry>
+   <entry class="399" summary="3">Customs of war &amp; diplomacy</entry>
+   <entry class="400" summary="3">Language</entry>
+   <entry class="401" summary="3">Philosophy &amp; theory</entry>
+   <entry class="402" summary="3">Miscellany</entry>
+   <entry class="403" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="404" summary="3">Special topics</entry>
+   <entry class="405" summary="3">Serial publications</entry>
+   <entry class="406" summary="3">Organizations &amp; management</entry>
+   <entry class="407" summary="3">Education, research &amp; related topics</entry>
+   <entry class="408" summary="3">Kinds of persons treatment</entry>
+   <entry class="409" summary="3">Geographic &amp; persons treatment</entry>
+   <entry class="410" summary="3">Linguistics</entry>
+   <entry class="411" summary="3">Writing systems</entry>
+   <entry class="412" summary="3">Etymology</entry>
+   <entry class="413" summary="3">Dictionaries</entry>
+   <entry class="414" summary="3">Phonology &amp; phonetics</entry>
+   <entry class="415" summary="3">Grammar</entry>
+   <entry class="416" summary="3">[Unassigned]</entry>
+   <entry class="417" summary="3">Dialectology &amp; historical linguistics</entry>
+   <entry class="418" summary="3">Standard usage &amp; applied linguistics</entry>
+   <entry class="419" summary="3">Sign languages</entry>
+   <entry class="420" summary="3">English &amp; Old English</entry>
+   <entry class="421" summary="3">English writing system &amp; phonology</entry>
+   <entry class="422" summary="3">English etymology</entry>
+   <entry class="423" summary="3">English dictionaries</entry>
+   <entry class="424" summary="3">[Unassigned]</entry>
+   <entry class="425" summary="3">English grammar</entry>
+   <entry class="426" summary="3">[Unassigned]</entry>
+   <entry class="427" summary="3">English language variations</entry>
+   <entry class="428" summary="3">Standard English usage</entry>
+   <entry class="429" summary="3">Old English (Anglo-Saxon)</entry>
+   <entry class="430" summary="3">Germanic languages; German</entry>
+   <entry class="431" summary="3">German writing systems &amp; phonology</entry>
+   <entry class="432" summary="3">German etymology</entry>
+   <entry class="433" summary="3">German dictionaries</entry>
+   <entry class="434" summary="3">[Unassigned]</entry>
+   <entry class="435" summary="3">German grammar</entry>
+   <entry class="436" summary="3">[Unassigned]</entry>
+   <entry class="437" summary="3">German language variations</entry>
+   <entry class="438" summary="3">Standard German usage</entry>
+   <entry class="439" summary="3">Other Germanic languages</entry>
+   <entry class="440" summary="3">Romance languages; French</entry>
+   <entry class="441" summary="3">French writing systems &amp; phonology</entry>
+   <entry class="442" summary="3">French etymology</entry>
+   <entry class="443" summary="3">French dictionaries</entry>
+   <entry class="444" summary="3">[Unassigned]</entry>
+   <entry class="445" summary="3">French grammar</entry>
+   <entry class="446" summary="3">[Unassigned]</entry>
+   <entry class="447" summary="3">French language variations</entry>
+   <entry class="448" summary="3">Standard French usage</entry>
+   <entry class="449" summary="3">Occitan &amp; Catalan</entry>
+   <entry class="450" summary="3">Italian, Romanian &amp; related languages</entry>
+   <entry class="451" summary="3">Italian writing systems &amp; phonology</entry>
+   <entry class="452" summary="3">Italian etymology</entry>
+   <entry class="453" summary="3">Italian dictionaries</entry>
+   <entry class="454" summary="3">[Unassigned]</entry>
+   <entry class="455" summary="3">Italian grammar</entry>
+   <entry class="456" summary="3">[Unassigned]</entry>
+   <entry class="457" summary="3">Italian language variations</entry>
+   <entry class="458" summary="3">Standard Italian usage</entry>
+   <entry class="459" summary="3">Romanian &amp; related languages</entry>
+   <entry class="460" summary="3">Spanish &amp; Portuguese languages</entry>
+   <entry class="461" summary="3">Spanish writing systems &amp; phonology</entry>
+   <entry class="462" summary="3">Spanish etymology</entry>
+   <entry class="463" summary="3">Spanish dictionaries</entry>
+   <entry class="464" summary="3">[Unassigned]</entry>
+   <entry class="465" summary="3">Spanish grammar</entry>
+   <entry class="466" summary="3">[Unassigned]</entry>
+   <entry class="467" summary="3">Spanish language variations</entry>
+   <entry class="468" summary="3">Standard Spanish usage</entry>
+   <entry class="469" summary="3">Portuguese</entry>
+   <entry class="470" summary="3">Italic languages; Latin</entry>
+   <entry class="471" summary="3">Classical Latin writing &amp; phonology</entry>
+   <entry class="472" summary="3">Classical Latin etymology</entry>
+   <entry class="473" summary="3">Classical Latin dictionaries</entry>
+   <entry class="474" summary="3">[Unassigned]</entry>
+   <entry class="475" summary="3">Classical Latin grammar</entry>
+   <entry class="476" summary="3">[Unassigned]</entry>
+   <entry class="477" summary="3">Old, postclassical &amp; Vulgar Latin</entry>
+   <entry class="478" summary="3">Classical Latin usage</entry>
+   <entry class="479" summary="3">Other Italic languages</entry>
+   <entry class="480" summary="3">Hellenic languages; classical Greek</entry>
+   <entry class="481" summary="3">Classical Greek writing &amp; phonology</entry>
+   <entry class="482" summary="3">Classical Greek etymology</entry>
+   <entry class="483" summary="3">Classical Greek dictionaries</entry>
+   <entry class="484" summary="3">[Unassigned]</entry>
+   <entry class="485" summary="3">Classical Greek grammar</entry>
+   <entry class="486" summary="3">[Unassigned]</entry>
+   <entry class="487" summary="3">Preclassical &amp; postclassical Greek</entry>
+   <entry class="488" summary="3">Classical Greek usage</entry>
+   <entry class="489" summary="3">Other Hellenic languages</entry>
+   <entry class="490" summary="3">Other languages</entry>
+   <entry class="491" summary="3">East Indo-European &amp; Celtic languages</entry>
+   <entry class="492" summary="3">Afro-Asiatic languages; Semitic languages</entry>
+   <entry class="493" summary="3">Non-Semitic Afro-Asiatic languages</entry>
+   <entry class="494" summary="3">Altaic, Uralic, Hyperborean &amp; Dravidian</entry>
+   <entry class="495" summary="3">Languages of East &amp; Southeast Asia</entry>
+   <entry class="496" summary="3">African languages</entry>
+   <entry class="497" summary="3">North American native languages</entry>
+   <entry class="498" summary="3">South American native languages</entry>
+   <entry class="499" summary="3">Austronesian &amp; other languages</entry>
+   <entry class="500" summary="3">Natural sciences &amp; mathematics</entry>
+   <entry class="501" summary="3">Philosophy &amp; theory</entry>
+   <entry class="502" summary="3">Miscellany</entry>
+   <entry class="503" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="504" summary="3">[Unassigned]</entry>
+   <entry class="505" summary="3">Serial publications</entry>
+   <entry class="506" summary="3">Organizations &amp; management</entry>
+   <entry class="507" summary="3">Education, research &amp; related topics</entry>
+   <entry class="508" summary="3">Natural history</entry>
+   <entry class="509" summary="3">Historical, geographic &amp; persons treatment</entry>
+   <entry class="510" summary="3">Mathematics</entry>
+   <entry class="511" summary="3">General principles of mathematics</entry>
+   <entry class="512" summary="3">Algebra</entry>
+   <entry class="513" summary="3">Arithmetic</entry>
+   <entry class="514" summary="3">Topology</entry>
+   <entry class="515" summary="3">Analysis</entry>
+   <entry class="516" summary="3">Geometry</entry>
+   <entry class="517" summary="3">[Unassigned]</entry>
+   <entry class="518" summary="3">Numerical analysis</entry>
+   <entry class="519" summary="3">Probabilities &amp; applied mathematics</entry>
+   <entry class="520" summary="3">Astronomy &amp; allied sciences</entry>
+   <entry class="521" summary="3">Celestial mechanics</entry>
+   <entry class="522" summary="3">Techniques, equipment &amp; materials</entry>
+   <entry class="523" summary="3">Specific celestial bodies &amp; phenomena</entry>
+   <entry class="524" summary="3">[Unassigned]</entry>
+   <entry class="525" summary="3">Earth (Astronomical geography)</entry>
+   <entry class="526" summary="3">Mathematical geography</entry>
+   <entry class="527" summary="3">Celestial navigation</entry>
+   <entry class="528" summary="3">Ephemerides</entry>
+   <entry class="529" summary="3">Chronology</entry>
+   <entry class="530" summary="3">Physics</entry>
+   <entry class="531" summary="3">Classical mechanics; solid mechanics</entry>
+   <entry class="532" summary="3">Fluid mechanics; liquid mechanics</entry>
+   <entry class="533" summary="3">Gas mechanics</entry>
+   <entry class="534" summary="3">Sound &amp; related vibrations</entry>
+   <entry class="535" summary="3">Light &amp; infrared &amp; ultraviolet phenomena</entry>
+   <entry class="536" summary="3">Heat</entry>
+   <entry class="537" summary="3">Electricity &amp; electronics</entry>
+   <entry class="538" summary="3">Magnetism</entry>
+   <entry class="539" summary="3">Modern physics</entry>
+   <entry class="540" summary="3">Chemistry &amp; allied sciences</entry>
+   <entry class="541" summary="3">Physical chemistry</entry>
+   <entry class="542" summary="3">Techniques, equipment &amp; materials</entry>
+   <entry class="543" summary="3">Analytical chemistry</entry>
+   <entry class="544" summary="3">[Unassigned]</entry>
+   <entry class="545" summary="3">[Unassigned]</entry>
+   <entry class="546" summary="3">Inorganic chemistry</entry>
+   <entry class="547" summary="3">Organic chemistry</entry>
+   <entry class="548" summary="3">Crystallography</entry>
+   <entry class="549" summary="3">Mineralogy</entry>
+   <entry class="550" summary="3">Earth sciences</entry>
+   <entry class="551" summary="3">Geology, hydrology &amp; meteorology</entry>
+   <entry class="552" summary="3">Petrology</entry>
+   <entry class="553" summary="3">Economic geology</entry>
+   <entry class="554" summary="3">Earth sciences of Europe</entry>
+   <entry class="555" summary="3">Earth sciences of Asia</entry>
+   <entry class="556" summary="3">Earth sciences of Africa</entry>
+   <entry class="557" summary="3">Earth sciences of North America</entry>
+   <entry class="558" summary="3">Earth sciences of South America</entry>
+   <entry class="559" summary="3">Earth sciences of other areas</entry>
+   <entry class="560" summary="3">Paleontology; paleozoology</entry>
+   <entry class="561" summary="3">Paleobotany; fossil microorganisms</entry>
+   <entry class="562" summary="3">Fossil invertebrates</entry>
+   <entry class="563" summary="3">Fossil marine &amp; seashore invertebrates</entry>
+   <entry class="564" summary="3">Fossil mollusks &amp; molluscoids</entry>
+   <entry class="565" summary="3">Fossil arthropods</entry>
+   <entry class="566" summary="3">Fossil chordates</entry>
+   <entry class="567" summary="3">Fossil cold-blooded vertebrates; fossil fishes</entry>
+   <entry class="568" summary="3">Fossil birds</entry>
+   <entry class="569" summary="3">Fossil mammals</entry>
+   <entry class="570" summary="3">Life sciences; biology</entry>
+   <entry class="571" summary="3">Physiology &amp; related subjects</entry>
+   <entry class="572" summary="3">Biochemistry</entry>
+   <entry class="573" summary="3">Specific physiological systems in animals</entry>
+   <entry class="574" summary="3">[Unassigned]</entry>
+   <entry class="575" summary="3">Specific parts of &amp; systems in plants</entry>
+   <entry class="576" summary="3">Genetics &amp; evolution</entry>
+   <entry class="577" summary="3">Ecology</entry>
+   <entry class="578" summary="3">Natural history of organisms</entry>
+   <entry class="579" summary="3">Microorganisms, fungi &amp; algae</entry>
+   <entry class="580" summary="3">Plants (Botany)</entry>
+   <entry class="581" summary="3">Specific topics in natural history</entry>
+   <entry class="582" summary="3">Plants noted for characteristics &amp; flowers</entry>
+   <entry class="583" summary="3">Dicotyledons</entry>
+   <entry class="584" summary="3">Monocotyledons</entry>
+   <entry class="585" summary="3">Gymnosperms; conifers</entry>
+   <entry class="586" summary="3">Seedless plants</entry>
+   <entry class="587" summary="3">Vascular seedless plants</entry>
+   <entry class="588" summary="3">Bryophytes</entry>
+   <entry class="589" summary="3">[Unassigned]</entry>
+   <entry class="590" summary="3">Animals (Zoology)</entry>
+   <entry class="591" summary="3">Specific topics in natural history</entry>
+   <entry class="592" summary="3">Invertebrates</entry>
+   <entry class="593" summary="3">Marine &amp; seashore invertebrates</entry>
+   <entry class="594" summary="3">Mollusks &amp; molluscoids</entry>
+   <entry class="595" summary="3">Arthropods</entry>
+   <entry class="596" summary="3">Chordates</entry>
+   <entry class="597" summary="3">Cold-blooded vertebrates; fishes</entry>
+   <entry class="598" summary="3">Birds</entry>
+   <entry class="599" summary="3">Mammals</entry>
+   <entry class="600" summary="3">Technology</entry>
+   <entry class="601" summary="3">Philosophy &amp; theory</entry>
+   <entry class="602" summary="3">Miscellany</entry>
+   <entry class="603" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="604" summary="3">Special topics</entry>
+   <entry class="605" summary="3">Serial publications</entry>
+   <entry class="606" summary="3">Organizations</entry>
+   <entry class="607" summary="3">Education, research &amp; related topics</entry>
+   <entry class="608" summary="3">Inventions &amp; patents</entry>
+   <entry class="609" summary="3">Historical, geographic &amp; persons treatment</entry>
+   <entry class="610" summary="3">Medicine &amp; health</entry>
+   <entry class="611" summary="3">Human anatomy, cytology &amp; histology</entry>
+   <entry class="612" summary="3">Human physiology</entry>
+   <entry class="613" summary="3">Personal health &amp; safety</entry>
+   <entry class="614" summary="3">Incidence &amp; prevention of disease</entry>
+   <entry class="615" summary="3">Pharmacology &amp; therapeutics</entry>
+   <entry class="616" summary="3">Diseases</entry>
+   <entry class="617" summary="3">Surgery &amp; related medical specialties</entry>
+   <entry class="618" summary="3">Gynecology, obstetrics, pediatrics &amp; geriatrics</entry>
+   <entry class="619" summary="3">[Unassigned]</entry>
+   <entry class="620" summary="3">Engineering &amp; allied operations</entry>
+   <entry class="621" summary="3">Applied physics</entry>
+   <entry class="622" summary="3">Mining &amp; related operations</entry>
+   <entry class="623" summary="3">Military &amp; nautical engineering</entry>
+   <entry class="624" summary="3">Civil engineering</entry>
+   <entry class="625" summary="3">Engineering of railroads &amp; roads</entry>
+   <entry class="626" summary="3">[Unassigned]</entry>
+   <entry class="627" summary="3">Hydraulic engineering</entry>
+   <entry class="628" summary="3">Sanitary &amp; municipal engineering</entry>
+   <entry class="629" summary="3">Other branches of engineering</entry>
+   <entry class="630" summary="3">Agriculture &amp; related technologies</entry>
+   <entry class="631" summary="3">Techniques, equipment &amp; materials</entry>
+   <entry class="632" summary="3">Plant injuries, diseases &amp; pests</entry>
+   <entry class="633" summary="3">Field &amp; plantation crops</entry>
+   <entry class="634" summary="3">Orchards, fruits &amp; forestry</entry>
+   <entry class="635" summary="3">Garden crops (Horticulture)</entry>
+   <entry class="636" summary="3">Animal husbandry</entry>
+   <entry class="637" summary="3">Processing dairy &amp; related products</entry>
+   <entry class="638" summary="3">Insect culture</entry>
+   <entry class="639" summary="3">Hunting, fishing &amp; conservation</entry>
+   <entry class="640" summary="3">Home &amp; family management</entry>
+   <entry class="641" summary="3">Food &amp; drink</entry>
+   <entry class="642" summary="3">Meals &amp; table service</entry>
+   <entry class="643" summary="3">Housing &amp; household equipment</entry>
+   <entry class="644" summary="3">Household utilities</entry>
+   <entry class="645" summary="3">Household furnishings</entry>
+   <entry class="646" summary="3">Sewing, clothing &amp; personal living</entry>
+   <entry class="647" summary="3">Management of public households</entry>
+   <entry class="648" summary="3">Housekeeping</entry>
+   <entry class="649" summary="3">Child rearing &amp; home care of persons</entry>
+   <entry class="650" summary="3">Management &amp; auxiliary services</entry>
+   <entry class="651" summary="3">Office services</entry>
+   <entry class="652" summary="3">Processes of written communication</entry>
+   <entry class="653" summary="3">Shorthand</entry>
+   <entry class="654" summary="3">[Unassigned]</entry>
+   <entry class="655" summary="3">[Unassigned]</entry>
+   <entry class="656" summary="3">[Unassigned]</entry>
+   <entry class="657" summary="3">Accounting</entry>
+   <entry class="658" summary="3">General management</entry>
+   <entry class="659" summary="3">Advertising &amp; public relations</entry>
+   <entry class="660" summary="3">Chemical engineering</entry>
+   <entry class="661" summary="3">Industrial chemicals</entry>
+   <entry class="662" summary="3">Explosives, fuels &amp; related products</entry>
+   <entry class="663" summary="3">Beverage technology</entry>
+   <entry class="664" summary="3">Food technology</entry>
+   <entry class="665" summary="3">Industrial oils, fats, waxes &amp; gases</entry>
+   <entry class="666" summary="3">Ceramic &amp; allied technologies</entry>
+   <entry class="667" summary="3">Cleaning, color &amp; coating technologies</entry>
+   <entry class="668" summary="3">Technology of other organic products</entry>
+   <entry class="669" summary="3">Metallurgy</entry>
+   <entry class="670" summary="3">Manufacturing</entry>
+   <entry class="671" summary="3">Metalworking &amp; primary metal products</entry>
+   <entry class="672" summary="3">Iron, steel &amp; other iron alloys</entry>
+   <entry class="673" summary="3">Nonferrous metals</entry>
+   <entry class="674" summary="3">Lumber processing, wood products &amp; cork</entry>
+   <entry class="675" summary="3">Leather &amp; fur processing</entry>
+   <entry class="676" summary="3">Pulp &amp; paper technology</entry>
+   <entry class="677" summary="3">Textiles</entry>
+   <entry class="678" summary="3">Elastomers &amp; elastomer products</entry>
+   <entry class="679" summary="3">Other products of specific materials</entry>
+   <entry class="680" summary="3">Manufacture for specific uses</entry>
+   <entry class="681" summary="3">Precision instruments &amp; other devices</entry>
+   <entry class="682" summary="3">Small forge work (Blacksmithing)</entry>
+   <entry class="683" summary="3">Hardware &amp; household appliances</entry>
+   <entry class="684" summary="3">Furnishings &amp; home workshops</entry>
+   <entry class="685" summary="3">Leather, fur goods &amp; related products</entry>
+   <entry class="686" summary="3">Printing &amp; related activities</entry>
+   <entry class="687" summary="3">Clothing &amp; accessories</entry>
+   <entry class="688" summary="3">Other final products &amp; packaging</entry>
+   <entry class="689" summary="3">[Unassigned]</entry>
+   <entry class="690" summary="3">Buildings</entry>
+   <entry class="691" summary="3">Building materials</entry>
+   <entry class="692" summary="3">Auxiliary construction practices</entry>
+   <entry class="693" summary="3">Specific materials &amp; purposes</entry>
+   <entry class="694" summary="3">Wood construction &amp; carpentry</entry>
+   <entry class="695" summary="3">Roof covering</entry>
+   <entry class="696" summary="3">Utilities</entry>
+   <entry class="697" summary="3">Heating, ventilating &amp; air-conditioning</entry>
+   <entry class="698" summary="3">Detail finishing</entry>
+   <entry class="699" summary="3">[Unassigned]</entry>
+   <entry class="700" summary="3">The arts; fine &amp; decorative arts</entry>
+   <entry class="701" summary="3">Philosophy of fine &amp; decorative arts</entry>
+   <entry class="702" summary="3">Miscellany of fine &amp; decorative arts</entry>
+   <entry class="703" summary="3">Dictionaries of fine &amp; decorative arts</entry>
+   <entry class="704" summary="3">Special topics in fine &amp; decorative arts</entry>
+   <entry class="705" summary="3">Serial publications of fine &amp; decorative arts</entry>
+   <entry class="706" summary="3">Organizations &amp; management</entry>
+   <entry class="707" summary="3">Education, research &amp; related topics</entry>
+   <entry class="708" summary="3">Galleries, museums &amp; private collections</entry>
+   <entry class="709" summary="3">Historical, geographic &amp; persons treatment</entry>
+   <entry class="710" summary="3">Civic &amp; landscape art</entry>
+   <entry class="711" summary="3">Area planning</entry>
+   <entry class="712" summary="3">Landscape architecture</entry>
+   <entry class="713" summary="3">Landscape architecture of trafficways</entry>
+   <entry class="714" summary="3">Water features</entry>
+   <entry class="715" summary="3">Woody plants</entry>
+   <entry class="716" summary="3">Herbaceous plants</entry>
+   <entry class="717" summary="3">Structures in landscape architecture</entry>
+   <entry class="718" summary="3">Landscape design of cemeteries</entry>
+   <entry class="719" summary="3">Natural landscapes</entry>
+   <entry class="720" summary="3">Architecture</entry>
+   <entry class="721" summary="3">Architectural structure</entry>
+   <entry class="722" summary="3">Architecture to ca. 300</entry>
+   <entry class="723" summary="3">Architecture from ca. 300 to 1399</entry>
+   <entry class="724" summary="3">Architecture from 1400</entry>
+   <entry class="725" summary="3">Public structures</entry>
+   <entry class="726" summary="3">Buildings for religious purposes</entry>
+   <entry class="727" summary="3">Buildings for education &amp; research</entry>
+   <entry class="728" summary="3">Residential &amp; related buildings</entry>
+   <entry class="729" summary="3">Design &amp; decoration</entry>
+   <entry class="730" summary="3">Plastic arts; sculpture</entry>
+   <entry class="731" summary="3">Processes, forms &amp; subjects of sculpture</entry>
+   <entry class="732" summary="3">Sculpture to ca. 500</entry>
+   <entry class="733" summary="3">Greek, Etruscan &amp; Roman sculpture</entry>
+   <entry class="734" summary="3">Sculpture from ca. 500 to 1399</entry>
+   <entry class="735" summary="3">Sculpture from 1400</entry>
+   <entry class="736" summary="3">Carving &amp; carvings</entry>
+   <entry class="737" summary="3">Numismatics &amp; sigillography</entry>
+   <entry class="738" summary="3">Ceramic arts</entry>
+   <entry class="739" summary="3">Art metalwork</entry>
+   <entry class="740" summary="3">Drawing &amp; decorative arts</entry>
+   <entry class="741" summary="3">Drawing &amp; drawings</entry>
+   <entry class="742" summary="3">Perspective</entry>
+   <entry class="743" summary="3">Drawing &amp; drawings by subject</entry>
+   <entry class="744" summary="3">[Unassigned]</entry>
+   <entry class="745" summary="3">Decorative arts</entry>
+   <entry class="746" summary="3">Textile arts</entry>
+   <entry class="747" summary="3">Interior decoration</entry>
+   <entry class="748" summary="3">Glass</entry>
+   <entry class="749" summary="3">Furniture &amp; accessories</entry>
+   <entry class="750" summary="3">Painting &amp; paintings</entry>
+   <entry class="751" summary="3">Techniques, equipment, materials &amp; forms</entry>
+   <entry class="752" summary="3">Color</entry>
+   <entry class="753" summary="3">Symbolism, allegory, mythology &amp; legend</entry>
+   <entry class="754" summary="3">Genre paintings</entry>
+   <entry class="755" summary="3">Religion</entry>
+   <entry class="756" summary="3">[Unassigned]</entry>
+   <entry class="757" summary="3">Human figures</entry>
+   <entry class="758" summary="3">Other subjects</entry>
+   <entry class="759" summary="3">Historical, geographic &amp; persons treatment</entry>
+   <entry class="760" summary="3">Graphic arts; printmaking &amp; prints</entry>
+   <entry class="761" summary="3">Relief processes (Block printing)</entry>
+   <entry class="762" summary="3">[Unassigned]</entry>
+   <entry class="763" summary="3">Lithographic processes</entry>
+   <entry class="764" summary="3">Chromolithography &amp; serigraphy</entry>
+   <entry class="765" summary="3">Metal engraving</entry>
+   <entry class="766" summary="3">Mezzotinting, aquatinting &amp; related processes</entry>
+   <entry class="767" summary="3">Etching &amp; drypoint</entry>
+   <entry class="768" summary="3">[Unassigned]</entry>
+   <entry class="769" summary="3">Prints</entry>
+   <entry class="770" summary="3">Photography, photographs &amp; computer art</entry>
+   <entry class="771" summary="3">Techniques, equipment &amp; materials</entry>
+   <entry class="772" summary="3">Metallic salt processes</entry>
+   <entry class="773" summary="3">Pigment processes of printing</entry>
+   <entry class="774" summary="3">Holography</entry>
+   <entry class="775" summary="3">Digital photography</entry>
+   <entry class="776" summary="3">Computer art (Digital art)</entry>
+   <entry class="777" summary="3">[Unassigned]</entry>
+   <entry class="778" summary="3">Fields &amp; kinds of photography</entry>
+   <entry class="779" summary="3">Photographs</entry>
+   <entry class="780" summary="3">Music</entry>
+   <entry class="781" summary="3">General principles &amp; musical forms</entry>
+   <entry class="782" summary="3">Vocal music</entry>
+   <entry class="783" summary="3">Music for single voices; the voice</entry>
+   <entry class="784" summary="3">Instruments &amp; instrumental ensembles</entry>
+   <entry class="785" summary="3">Ensembles with one instrument per part</entry>
+   <entry class="786" summary="3">Keyboard &amp; other instruments</entry>
+   <entry class="787" summary="3">Stringed instruments</entry>
+   <entry class="788" summary="3">Wind instruments</entry>
+   <entry class="789" summary="3">(Optional number)</entry>
+   <entry class="790" summary="3">Recreational &amp; performing arts</entry>
+   <entry class="791" summary="3">Public performances</entry>
+   <entry class="792" summary="3">Stage presentations</entry>
+   <entry class="793" summary="3">Indoor games &amp; amusements</entry>
+   <entry class="794" summary="3">Indoor games of skill</entry>
+   <entry class="795" summary="3">Games of chance</entry>
+   <entry class="796" summary="3">Athletic &amp; outdoor sports &amp; games</entry>
+   <entry class="797" summary="3">Aquatic &amp; air sports</entry>
+   <entry class="798" summary="3">Equestrian sports &amp; animal racing</entry>
+   <entry class="799" summary="3">Fishing, hunting &amp; shooting</entry>
+   <entry class="800" summary="3">Literature &amp; rhetoric</entry>
+   <entry class="801" summary="3">Philosophy &amp; theory</entry>
+   <entry class="802" summary="3">Miscellany</entry>
+   <entry class="803" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="804" summary="3">[Unassigned]</entry>
+   <entry class="805" summary="3">Serial publications</entry>
+   <entry class="806" summary="3">Organizations &amp; management</entry>
+   <entry class="807" summary="3">Education, research &amp; related topics</entry>
+   <entry class="808" summary="3">Rhetoric &amp; collections of literature</entry>
+   <entry class="809" summary="3">History, description &amp; criticism</entry>
+   <entry class="810" summary="3">American literature in English</entry>
+   <entry class="811" summary="3">American poetry in English</entry>
+   <entry class="812" summary="3">American drama in English</entry>
+   <entry class="813" summary="3">American fiction in English</entry>
+   <entry class="814" summary="3">American essays in English</entry>
+   <entry class="815" summary="3">American speeches in English</entry>
+   <entry class="816" summary="3">American letters in English</entry>
+   <entry class="817" summary="3">American humor &amp; satire in English</entry>
+   <entry class="818" summary="3">American miscellaneous writings</entry>
+   <entry class="819" summary="3">(Optional number)</entry>
+   <entry class="820" summary="3">English &amp; Old English literatures</entry>
+   <entry class="821" summary="3">English poetry</entry>
+   <entry class="822" summary="3">English drama</entry>
+   <entry class="823" summary="3">English fiction</entry>
+   <entry class="824" summary="3">English essays</entry>
+   <entry class="825" summary="3">English speeches</entry>
+   <entry class="826" summary="3">English letters</entry>
+   <entry class="827" summary="3">English humor &amp; satire</entry>
+   <entry class="828" summary="3">English miscellaneous writings</entry>
+   <entry class="829" summary="3">Old English (Anglo-Saxon)</entry>
+   <entry class="830" summary="3">Literatures of Germanic languages</entry>
+   <entry class="831" summary="3">German poetry</entry>
+   <entry class="832" summary="3">German drama</entry>
+   <entry class="833" summary="3">German fiction</entry>
+   <entry class="834" summary="3">German essays</entry>
+   <entry class="835" summary="3">German speeches</entry>
+   <entry class="836" summary="3">German letters</entry>
+   <entry class="837" summary="3">German humor &amp; satire</entry>
+   <entry class="838" summary="3">German miscellaneous writings</entry>
+   <entry class="839" summary="3">Other Germanic literatures</entry>
+   <entry class="840" summary="3">Literatures of Romance languages</entry>
+   <entry class="841" summary="3">French poetry</entry>
+   <entry class="842" summary="3">French drama</entry>
+   <entry class="843" summary="3">French fiction</entry>
+   <entry class="844" summary="3">French essays</entry>
+   <entry class="845" summary="3">French speeches</entry>
+   <entry class="846" summary="3">French letters</entry>
+   <entry class="847" summary="3">French humor &amp; satire</entry>
+   <entry class="848" summary="3">French miscellaneous writings</entry>
+   <entry class="849" summary="3">Occitan &amp; Catalan literatures</entry>
+   <entry class="850" summary="3">Italian, Romanian &amp; related literatures</entry>
+   <entry class="851" summary="3">Italian poetry</entry>
+   <entry class="852" summary="3">Italian drama</entry>
+   <entry class="853" summary="3">Italian fiction</entry>
+   <entry class="854" summary="3">Italian essays</entry>
+   <entry class="855" summary="3">Italian speeches</entry>
+   <entry class="856" summary="3">Italian letters</entry>
+   <entry class="857" summary="3">Italian humor &amp; satire</entry>
+   <entry class="858" summary="3">Italian miscellaneous writings</entry>
+   <entry class="859" summary="3">Romanian &amp; related literatures</entry>
+   <entry class="860" summary="3">Spanish &amp; Portuguese literatures</entry>
+   <entry class="861" summary="3">Spanish poetry</entry>
+   <entry class="862" summary="3">Spanish drama</entry>
+   <entry class="863" summary="3">Spanish fiction</entry>
+   <entry class="864" summary="3">Spanish essays</entry>
+   <entry class="865" summary="3">Spanish speeches</entry>
+   <entry class="866" summary="3">Spanish letters</entry>
+   <entry class="867" summary="3">Spanish humor &amp; satire</entry>
+   <entry class="868" summary="3">Spanish miscellaneous writings</entry>
+   <entry class="869" summary="3">Portuguese literature</entry>
+   <entry class="870" summary="3">Italic literatures; Latin literature</entry>
+   <entry class="871" summary="3">Latin poetry</entry>
+   <entry class="872" summary="3">Latin dramatic poetry &amp; drama</entry>
+   <entry class="873" summary="3">Latin epic poetry &amp; fiction</entry>
+   <entry class="874" summary="3">Latin lyric poetry</entry>
+   <entry class="875" summary="3">Latin speeches</entry>
+   <entry class="876" summary="3">Latin letters</entry>
+   <entry class="877" summary="3">Latin humor &amp; satire</entry>
+   <entry class="878" summary="3">Latin miscellaneous writings</entry>
+   <entry class="879" summary="3">Literatures of other Italic languages</entry>
+   <entry class="880" summary="3">Hellenic literatures; classical Greek</entry>
+   <entry class="881" summary="3">Classical Greek poetry</entry>
+   <entry class="882" summary="3">Classical Greek dramatic poetry &amp; drama</entry>
+   <entry class="883" summary="3">Classical Greek epic poetry &amp; fiction</entry>
+   <entry class="884" summary="3">Classical Greek lyric poetry</entry>
+   <entry class="885" summary="3">Classical Greek speeches</entry>
+   <entry class="886" summary="3">Classical Greek letters</entry>
+   <entry class="887" summary="3">Classical Greek humor &amp; satire</entry>
+   <entry class="888" summary="3">Classical Greek miscellaneous writings</entry>
+   <entry class="889" summary="3">Modern Greek literature</entry>
+   <entry class="890" summary="3">Literatures of other languages</entry>
+   <entry class="891" summary="3">East Indo-European &amp; Celtic literatures</entry>
+   <entry class="892" summary="3">Afro-Asiatic literatures; Semitic literatures</entry>
+   <entry class="893" summary="3">Non-Semitic Afro-Asiatic literatures</entry>
+   <entry class="894" summary="3">Altaic, Uralic, Hyperborean &amp; Dravidian</entry>
+   <entry class="895" summary="3">Literatures of East &amp; Southeast Asia</entry>
+   <entry class="896" summary="3">African literatures</entry>
+   <entry class="897" summary="3">North American native literatures</entry>
+   <entry class="898" summary="3">South American native literatures</entry>
+   <entry class="899" summary="3">Austronesian &amp; other literatures</entry>
+   <entry class="900" summary="3">History &amp; geography</entry>
+   <entry class="901" summary="3">Philosophy &amp; theory</entry>
+   <entry class="902" summary="3">Miscellany</entry>
+   <entry class="903" summary="3">Dictionaries &amp; encyclopedias</entry>
+   <entry class="904" summary="3">Collected accounts of events</entry>
+   <entry class="905" summary="3">Serial publications</entry>
+   <entry class="906" summary="3">Organizations &amp; management</entry>
+   <entry class="907" summary="3">Education, research &amp; related topics</entry>
+   <entry class="908" summary="3">Kinds of persons treatment</entry>
+   <entry class="909" summary="3">World history</entry>
+   <entry class="910" summary="3">Geography &amp; travel</entry>
+   <entry class="911" summary="3">Historical geography</entry>
+   <entry class="912" summary="3">Atlases, maps, charts &amp; plans</entry>
+   <entry class="913" summary="3">Geography of &amp; travel in ancient world</entry>
+   <entry class="914" summary="3">Geography of &amp; travel in Europe</entry>
+   <entry class="915" summary="3">Geography of &amp; travel in Asia</entry>
+   <entry class="916" summary="3">Geography of &amp; travel in Africa</entry>
+   <entry class="917" summary="3">Geography of &amp; travel in North America</entry>
+   <entry class="918" summary="3">Geography of &amp; travel in South America</entry>
+   <entry class="919" summary="3">Geography of &amp; travel in other areas</entry>
+   <entry class="920" summary="3">Biography, genealogy &amp; insignia</entry>
+   <entry class="921" summary="3">(Optional number)</entry>
+   <entry class="922" summary="3">(Optional number)</entry>
+   <entry class="923" summary="3">(Optional number)</entry>
+   <entry class="924" summary="3">(Optional number)</entry>
+   <entry class="925" summary="3">(Optional number)</entry>
+   <entry class="926" summary="3">(Optional number)</entry>
+   <entry class="927" summary="3">(Optional number)</entry>
+   <entry class="928" summary="3">(Optional number)</entry>
+   <entry class="929" summary="3">Genealogy, names &amp; insignia</entry>
+   <entry class="930" summary="3">History of ancient world to ca. 499</entry>
+   <entry class="931" summary="3">China to 420</entry>
+   <entry class="932" summary="3">Egypt to 640</entry>
+   <entry class="933" summary="3">Palestine to 70</entry>
+   <entry class="934" summary="3">India to 647</entry>
+   <entry class="935" summary="3">Mesopotamia &amp; Iranian Plateau to 637</entry>
+   <entry class="936" summary="3">Europe north &amp; west of Italy to ca. 499</entry>
+   <entry class="937" summary="3">Italy &amp; adjacent territories to 476</entry>
+   <entry class="938" summary="3">Greece to 323</entry>
+   <entry class="939" summary="3">Other parts of ancient world to ca. 640</entry>
+   <entry class="940" summary="3">History of Europe</entry>
+   <entry class="941" summary="3">British Isles</entry>
+   <entry class="942" summary="3">England &amp; Wales</entry>
+   <entry class="943" summary="3">Central Europe; Germany</entry>
+   <entry class="944" summary="3">France &amp; Monaco</entry>
+   <entry class="945" summary="3">Italian Peninsula &amp; adjacent islands</entry>
+   <entry class="946" summary="3">Iberian Peninsula &amp; adjacent islands</entry>
+   <entry class="947" summary="3">Eastern Europe; Russia</entry>
+   <entry class="948" summary="3">Scandinavia</entry>
+   <entry class="949" summary="3">Other parts of Europe</entry>
+   <entry class="950" summary="3">History of Asia; Far East</entry>
+   <entry class="951" summary="3">China &amp; adjacent areas</entry>
+   <entry class="952" summary="3">Japan</entry>
+   <entry class="953" summary="3">Arabian Peninsula &amp; adjacent areas</entry>
+   <entry class="954" summary="3">South Asia; India</entry>
+   <entry class="955" summary="3">Iran</entry>
+   <entry class="956" summary="3">Middle East (Near East)</entry>
+   <entry class="957" summary="3">Siberia (Asiatic Russia)</entry>
+   <entry class="958" summary="3">Central Asia</entry>
+   <entry class="959" summary="3">Southeast Asia</entry>
+   <entry class="960" summary="3">History of Africa</entry>
+   <entry class="961" summary="3">Tunisia &amp; Libya</entry>
+   <entry class="962" summary="3">Egypt &amp; Sudan</entry>
+   <entry class="963" summary="3">Ethiopia &amp; Eritrea</entry>
+   <entry class="964" summary="3">Northwest African coast &amp; offshore islands</entry>
+   <entry class="965" summary="3">Algeria</entry>
+   <entry class="966" summary="3">West Africa &amp; offshore islands</entry>
+   <entry class="967" summary="3">Central Africa &amp; offshore islands</entry>
+   <entry class="968" summary="3">Southern Africa; Republic of South Africa</entry>
+   <entry class="969" summary="3">South Indian Ocean islands</entry>
+   <entry class="970" summary="3">History of North America</entry>
+   <entry class="971" summary="3">Canada</entry>
+   <entry class="972" summary="3">Middle America; Mexico</entry>
+   <entry class="973" summary="3">United States</entry>
+   <entry class="974" summary="3">Northeastern United States</entry>
+   <entry class="975" summary="3">Southeastern United States</entry>
+   <entry class="976" summary="3">South central United States</entry>
+   <entry class="977" summary="3">North central United States</entry>
+   <entry class="978" summary="3">Western United States</entry>
+   <entry class="979" summary="3">Great Basin &amp; Pacific Slope region</entry>
+   <entry class="980" summary="3">History of South America</entry>
+   <entry class="981" summary="3">Brazil</entry>
+   <entry class="982" summary="3">Argentina</entry>
+   <entry class="983" summary="3">Chile</entry>
+   <entry class="984" summary="3">Bolivia</entry>
+   <entry class="985" summary="3">Peru</entry>
+   <entry class="986" summary="3">Colombia &amp; Ecuador</entry>
+   <entry class="987" summary="3">Venezuela</entry>
+   <entry class="988" summary="3">Guiana</entry>
+   <entry class="989" summary="3">Paraguay &amp; Uruguay</entry>
+   <entry class="990" summary="3">History of other areas</entry>
+   <entry class="991" summary="3">[Unassigned]</entry>
+   <entry class="992" summary="3">[Unassigned]</entry>
+   <entry class="993" summary="3">New Zealand</entry>
+   <entry class="994" summary="3">Australia</entry>
+   <entry class="995" summary="3">Melanesia; New Guinea</entry>
+   <entry class="996" summary="3">Other parts of Pacific; Polynesia</entry>
+   <entry class="997" summary="3">Atlantic Ocean islands</entry>
+   <entry class="998" summary="3">Arctic islands &amp; Antarctica</entry>
+   <entry class="999" summary="3">Extraterrestrial worlds</entry>
+</entries>

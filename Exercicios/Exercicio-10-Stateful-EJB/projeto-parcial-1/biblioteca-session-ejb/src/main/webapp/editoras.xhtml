@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Editoras</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .editoras {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .editoras th {
+                background: lightblue;
+            }
+            .editoras tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Editoras</h1>
+        <h:form id="f1">
+            Filtrar por nome
+            <h:inputText value="#{editoraBean.textoBusca}" autocomplete="off">
+                <f:ajax render="f2" event="keyup" delay="1000"/>
+            </h:inputText>
+        </h:form>
+        <h:form id="f2">
+            <h:dataTable value="#{editoraBean.editoras}"  var="editora" styleClass="editoras">
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    #{editora.id}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Nome</f:facet>
+                    #{editora.nome}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Títulos</f:facet>
+                    <ui:repeat value="#{editora.titulos}" var="livro" varStatus="status">
+                        #{livro.titulo}
+                        <h:outputText value=", "  rendered="#{not status.last}"/>
+                    </ui:repeat>
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{editoraBean.delete(editora)}" value="Remover" />
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{editoraBean.edit(editora)}" value="Editar" />
+                </h:column>
+            </h:dataTable>
+
+            <h:commandButton action="editora.xhtml" value="Inserir" />
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,15 @@
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/LivroBean.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/BibliotecaBean.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/jsf/EditoraConverter.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/EditoraService.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/LivroEJB.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/EditoraBean.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/EditoraEJB.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/LivroService.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/jpa/Autor.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/jsf/AutorConverter.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/AutorEJB.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/jpa/Livro.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/jpa/Editora.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/web/AutorBean.java
+/Users/helderdarocha/Code/NetBeansProjects/CursoJavaEE/CursoJavaEE_GPA/Exercicios-JavaEE-7/Exercicio-6-Relacionamentos-JPA/solucao/biblioteca-jpa/src/main/java/biblioteca/ejb/AutorService.java

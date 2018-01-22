@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Autores Angular REST Client</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.js"></script>
+        <script src="js/biblioteca-client.js"></script>
+        <style>
+            .table {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .table th {
+                background: lightblue;
+            }
+            .table tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </head>
+    <body ng-app="biblioteca" ng-controller="autores">
+        
+        <h1>Autores</h1>
+
+        <form id="f1">
+            Filtrar por nome
+            <input type="text" name="textoBusca" autocomplete="off"/>
+        </form>
+
+        <form id="f2">
+                <table class="table" id="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th><th></th><th></th>
+                    </tr>
+                    <tr ng-repeat="autor in autores">
+                        <td>{{autor.id}}</td>
+                        <td>{{autor.nome}}</td>
+                        <td><input type="button" onclick="delete()" value="Remover" /></td>
+                        <td><input type="button" onclick="edit()" value="Editar" /></td>
+                    </tr>
+                </table>
+                <input type="button" onclick="inserir()" value="Inserir" />
+        </form>
+
+    </body>
+</html>

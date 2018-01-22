@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Livros</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .livros {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .livros th {
+                background: lightblue;
+            }
+            .livros tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Livros</h1>
+        <h:form id="f1">
+            <h:panelGrid columns="2">
+                Filtrar por Título <h:inputText value="#{livroQueryBean.matchTitulo}" autocomplete="off">
+                    <f:ajax render="f1 f2" event="keyup" delay="1000"/>
+                </h:inputText>
+                e Idioma <h:selectOneMenu value="#{livroQueryBean.matchIdioma}">
+                    <f:selectItem itemLabel="Todos" noSelectionOption="true" />
+                    <f:selectItems value="#{livroQueryBean.locales}" var="locale" itemValue="#{locale.language}" itemLabel="#{locale.displayLanguage}" />
+                    <f:ajax render="f1 f2"/>
+                </h:selectOneMenu>
+                e Autor <h:inputText value="#{livroQueryBean.matchAutor}"  autocomplete="off">
+                    <f:ajax render="f1 f2" event="keyup" delay="1000"/>
+                </h:inputText>
+                e Editora <h:inputText value="#{livroQueryBean.matchEditora}"  autocomplete="off">
+                    <f:ajax render="f1 f2" event="keyup" delay="1000"/>
+                </h:inputText>
+                e Assunto (texto ou código) <h:inputText value="#{livroQueryBean.matchAssunto}"  autocomplete="off">
+                    <f:ajax render="f1 f2" event="keyup" delay="1000"/>
+                </h:inputText><br/>
+            </h:panelGrid>
+        </h:form>
+
+        <h:form id="f2">
+            <h:dataTable value="#{livroQueryBean.livros}" var="livro" styleClass="livros">
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    #{livro.id}</h:column>
+                <h:column>
+                    <f:facet name="header">ISBN</f:facet>
+                    #{livro.isbn}</h:column>
+                <h:column>
+                    <f:facet name="header">Título</f:facet>
+                    #{livro.titulo}</h:column>
+                <h:column>
+                    <f:facet name="header">Idioma</f:facet>
+                    #{livroBean.getLocale(livro.idioma).displayLanguage}</h:column>
+                <h:column>
+                    <f:facet name="header">Editora</f:facet>
+                    #{livro.editora.nome}</h:column>
+                <h:column>
+                    <f:facet name="header">Autores</f:facet>
+                    <ui:repeat value="#{livro.autores}" var="autor" varStatus="status">
+                        #{autor.nome}
+                        <h:outputText value=", "  rendered="#{not status.last}"/>
+                    </ui:repeat>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Assunto</f:facet>
+                        #{livro.assunto.id.ddcClass}
+                    <h:outputText value="#{livro.assunto.contexto.contexto.descricao} / "  rendered="#{livro.assunto.contexto.contexto != null}"/>
+                    <h:outputText value="#{livro.assunto.contexto.descricao} / "  rendered="#{livro.assunto.contexto != null}"/>
+                    #{livro.assunto.descricao}
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{livroBean.delete(livro)}" value="Remover" />
+                </h:column>
+                <h:column>
+                    <h:commandButton action="#{livroBean.edit(livro)}" value="Editar" />
+                </h:column>
+            </h:dataTable>
+
+            <h:commandButton action="livro.xhtml" value="Inserir" />
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Insert or Update Livro</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .error {
+                font-family: sans-serif;
+                font-size: 9pt;
+                color: red;
+             }
+        </style>
+    </h:head>
+
+    <h:body>
+        <h1>
+            <h:outputLabel rendered="#{livroBean.current.id != 0}">Editar livro no. #{livroBean.current.id}</h:outputLabel>
+            <h:outputLabel rendered="#{livroBean.current.id == 0}">Inserir livro</h:outputLabel>
+        </h1>
+
+        <h:form id="f1">
+            <h:inputHidden value="#{livroBean.current.id}" />
+            <h:panelGrid columns="3">
+                ISBN <h:inputText size="13" value="#{livroBean.current.isbn}" id="isbn"/> <h:message styleClass="error" for="isbn" />
+                Título <h:inputText size="64" value="#{livroBean.current.titulo}" id="titulo"/> <h:message styleClass="error" for="titulo" />
+                Idioma <h:inputText size="2" value="#{livroBean.current.idioma}" id="idioma"/> <h:message styleClass="error" for="idioma" />
+                Autores 
+                <h:selectManyListbox value="#{livroBean.current.autores}" id="autores" required="true">
+                    <f:selectItem itemLabel="Selecione" noSelectionOption="true" itemValue="#{null}"/>
+                    <f:selectItems value="#{bibliotecaBean.autores}" var="autor"
+                                   itemLabel="#{autor.nome}" 
+                                   itemValue="#{autor}"/>
+                    <f:converter converterId="autorConverter" />
+                </h:selectManyListbox>
+                 <h:message styleClass="error" for="autores" />
+                Editora 
+                <h:selectOneMenu value="#{livroBean.current.editora}" id="editora">
+                    <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                    <f:selectItems value="#{bibliotecaBean.editoras}" var="editora" 
+                                   itemLabel="#{editora.nome}" 
+                                   itemValue="#{editora}"/>
+                    <f:converter converterId="editoraConverter" />
+                </h:selectOneMenu>
+                 <h:message styleClass="error" for="editora" />
+                Assunto
+                <h:panelGroup>
+                    <h:selectOneMenu value="#{livroBean.nivel1}" id="s1">
+                        <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                        <f:selectItems value="#{bibliotecaBean.assuntos}" var="assunto" 
+                                       itemLabel="#{assunto.id.ddcClass} #{assunto.descricao}" 
+                                       itemValue="#{assunto}"/>
+                        <f:converter converterId="assuntoConverter" />
+                        <f:ajax render="s2 s3"/> <!-- Ao retornar, renderize elementos s2 e s3 -->
+                    </h:selectOneMenu>
+                    /
+                    <h:selectOneMenu value="#{livroBean.nivel2}" id="s2">
+                        <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                        <f:selectItems value="#{livroBean.nivel1.assuntos}" var="assunto" 
+                                       itemLabel="#{assunto.id.ddcClass} #{assunto.descricao}" 
+                                       itemValue="#{assunto}"/>
+                        <f:converter converterId="assuntoConverter" />
+                        <f:ajax render="s3"/> <!-- Ao retornar, renderize elemento s3 -->
+                    </h:selectOneMenu>
+                    /
+                    <!-- EXERCICIO: acrescente a atributo
+                                   value="#{livroBean.current.assunto}"
+                         no h:selecxtOneMenu abaixo quando terminar de implementar
+                         o relacionamento Livro-Assunto. Isto irá gravar o resultado
+                         da seleção do bean do Livro.
+                    -->
+                    <h:selectOneMenu  id="s3">
+                        <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                        <f:selectItems value="#{livroBean.nivel2.assuntos}" var="assunto" 
+                                       itemLabel="#{assunto.id.ddcClass} #{assunto.descricao}" 
+                                       itemValue="#{assunto}"/>
+                        <f:converter converterId="assuntoConverter" />
+                    </h:selectOneMenu>
+                    
+                </h:panelGroup>
+                <h:message styleClass="error" for="s3" />
+
+            </h:panelGrid>
+            <h:commandButton action="#{livroBean.gravar}" value="Gravar"/>
+            <h:commandButton action="#{livroBean.cancelar}" value="Cancelar" immediate="true"/>
+        </h:form>
+
+    </h:body>
+</html>

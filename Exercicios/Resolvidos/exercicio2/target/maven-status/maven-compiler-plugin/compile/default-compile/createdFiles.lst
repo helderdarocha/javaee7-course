@@ -1,0 +1,9 @@
+biblioteca/web/Comando.class
+biblioteca/web/CreateComando.class
+biblioteca/web/AdminServlet.class
+biblioteca/web/DeleteComando.class
+biblioteca/web/InsertComando.class
+biblioteca/web/ConfigServlet.class
+biblioteca/web/UpdateComando.class
+biblioteca/web/LivrosServlet.class
+biblioteca/web/DropComando.class

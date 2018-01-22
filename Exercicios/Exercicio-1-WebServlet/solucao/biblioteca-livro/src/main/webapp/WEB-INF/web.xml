@@ -1,0 +1,54 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:web="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+
+        <!-- Lista de arquivos que serão usados caso a URL termine em / -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.xhtml</welcome-file>
+		<welcome-file>index.jsf</welcome-file>
+		<welcome-file>index.faces</welcome-file>
+	</welcome-file-list>
+
+        <!-- Configuração do Faces Servlet -->
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+        
+        <!-- Configuração do Servlet criado neste exercício -->
+	<servlet>
+		<servlet-name>BibliotecaServlet</servlet-name>
+		<servlet-class>biblioteca.web.BibliotecaServlet</servlet-class>
+	</servlet>
+
+        <!-- Mapeamentos de URL para o Faces Servlet -->
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>/faces/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.jsf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.faces</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.xhtml</url-pattern>
+	</servlet-mapping>
+        
+        <!-- Mapeamento de URL para o servlet usado neste exercício.
+             Uma forma alternativa de declarar o mapeamento é usar a
+             anotação @WebServlet("/biblioteca-servlet") na própria
+             classe onde o servlet é definido -->
+	<servlet-mapping>
+		<servlet-name>BibliotecaServlet</servlet-name>
+		<url-pattern>/biblioteca-servlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

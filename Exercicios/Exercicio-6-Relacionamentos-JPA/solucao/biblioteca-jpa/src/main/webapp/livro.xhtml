@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Insert or Update Livro</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    </h:head>
+
+    <h:body>
+        <h1>
+            <h:outputLabel rendered="#{livroBean.current.id != 0}">Editar livro no. #{livroBean.current.id}</h:outputLabel>
+            <h:outputLabel rendered="#{livroBean.current.id == 0}">Inserir livro</h:outputLabel>
+        </h1>
+
+        <h:form id="f1">
+            <h:inputHidden value="#{livroBean.current.id}" />
+            <h:panelGrid columns="2">
+                ISBN <h:inputText size="13" value="#{livroBean.current.isbn}"/>
+                Título <h:inputText size="64" value="#{livroBean.current.titulo}"/>
+                Idioma <h:inputText size="2" value="#{livroBean.current.idioma}"/>
+                Autores 
+                <h:selectManyListbox value="#{livroBean.current.autores}">
+                    <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                    <f:selectItems value="#{bibliotecaBean.autores}" var="autor"
+                                   itemLabel="#{autor.nome}" 
+                                   itemValue="#{autor}"/>
+                    <f:converter converterId="autorConverter" />
+                </h:selectManyListbox>
+                Editora 
+                <h:selectOneMenu value="#{livroBean.current.editora}">
+                    <f:selectItem itemLabel="Selecione" noSelectionOption="true" />
+                    <f:selectItems value="#{bibliotecaBean.editoras}" var="editora" 
+                                   itemLabel="#{editora.nome}" 
+                                   itemValue="#{editora}"/>
+                    <f:converter converterId="editoraConverter" />
+                </h:selectOneMenu>
+            </h:panelGrid>
+            <h:commandButton action="#{livroBean.gravar}" value="Gravar"/>
+            <h:commandButton action="/livros.xhtml" value="Cancelar" immediate="true"/>
+        </h:form>
+
+    </h:body>
+</html>

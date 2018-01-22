@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <title>Insert or Update Livro</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    </h:head>
+
+    <h:body>
+        <h1>
+            <h:outputLabel rendered="#{livroBean.livro.id != 0}">Editar livro no. #{livroBean.livro.id}</h:outputLabel>
+            <h:outputLabel rendered="#{livroBean.livro.id == 0}">Inserir livro</h:outputLabel>
+        </h1>
+
+        <h:form id="f1">
+            <h:inputHidden value="#{livroBean.livro.id}" />
+            <dl>
+                <dt>ISBN</dt><dd><h:inputText size="13" value="#{livroBean.livro.isbn}"/></dd>
+                <dt>Título</dt><dd><h:inputText size="64" value="#{livroBean.livro.titulo}"/></dd>
+                <dt>Idioma</dt><dd><h:inputText size="2" value="#{livroBean.livro.idioma}"/></dd>
+            </dl>
+            <h:commandButton action="#{livroBean.gravar}" value="Gravar" rendered="true"/>
+        </h:form>
+
+    </h:body>
+</html>

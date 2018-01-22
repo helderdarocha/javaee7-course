@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/FilmeService/FilmeService?wsdl" uri="src/conf/xml-resources/web-service-references/FilmeService/wsdl/localhost_8080/FilmeService/FilmeService.wsdl"/>
+    <system systemId="http://localhost:8080/FilmeService/FilmeService?xsd=1" uri="src/conf/xml-resources/web-service-references/FilmeService/wsdl/localhost_8080/FilmeService/FilmeService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/FilmeBeanEJBService/FilmeBeanEJB?WSDL" uri="src/conf/xml-resources/web-service-references/FilmeBeanEJB/wsdl/localhost_8080/FilmeBeanEJBService/FilmeBeanEJB.wsdl"/>
+    <system systemId="http://localhost:8080/FilmeBeanEJBService/FilmeBeanEJB?xsd=1" uri="src/conf/xml-resources/web-service-references/FilmeBeanEJB/wsdl/localhost_8080/FilmeBeanEJBService/FilmeBeanEJB.xsd_1.xsd"/>
+</catalog>

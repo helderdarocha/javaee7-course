@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" 
+      xmlns:fn="http://xmlns.jcp.org/jsp/jstl/functions">
+    <h:head>
+        <title>Livros para empréstimo</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .exemplares, a:link {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .exemplares th {
+                background: lightblue;
+            }
+            .exemplares tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Livros disponíveis para empréstimo</h1>
+        <h2>Usuário: #{usuarioLogado.nome}</h2>
+        <p>Selecione até 3 exemplares (1 tipo de exemplar por livro)</p>
+        
+        <h:form>
+            <p><h:commandLink value="Visualizar cesta de empréstimos (#{fn:length(emprestimoBean.conteudo)} itens)" action="cesta-emprestimo.xhtml" />
+            <br/>
+            <h:commandLink value="Visualizar empréstimos realizados (#{fn:length(emprestimoBean.exemplaresEmprestados)} itens)" action="emprestados.xhtml" />
+            </p>
+            <h:dataTable value="#{emprestimoBean.livrosComExemplaresDisponiveis}" var="livro" styleClass="exemplares"> <!-- apenas livros que tem um exemplar disponivel -->
+                <h:column>
+                    <f:facet name="header">ISBN</f:facet>
+                    #{livro.isbn}</h:column>
+                <h:column>
+                    <f:facet name="header">Título</f:facet>
+                    #{livro.titulo}</h:column>
+                <h:column>
+                    <f:facet name="header">Editora</f:facet>
+                    #{livro.editora.nome}</h:column>
+                <h:column>
+                    <f:facet name="header">Autores</f:facet>
+                    <ui:repeat value="#{livro.autores}" var="autor" varStatus="status">
+                        #{autor.nome}
+                        <h:outputText value=", "  rendered="#{not status.last}"/>
+                    </ui:repeat>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Disponibilidade</f:facet>
+                    <b>#{emprestimoBean.impressoCount(livro)}</b> impressos, <b>#{emprestimoBean.ebookCount(livro)}</b> ebooks.
+                </h:column>
+                <h:column>
+                    <h:commandButton rendered="#{emprestimoBean.impressoCount(livro) > 0}" 
+                                     disabled="#{fn:length(emprestimoBean.conteudo) > 3 or emprestimoBean.selecionado(livro)}"
+                                     action="#{emprestimoBean.addImpresso(livro)}" 
+                                     value="Incluir Impresso" /> 
+                    <h:commandButton rendered="#{emprestimoBean.ebookCount(livro) > 0}" 
+                                     disabled="#{fn:length(emprestimoBean.conteudo) > 3 or emprestimoBean.selecionado(livro)}"
+                                     action="#{emprestimoBean.addEbook(livro)}" 
+                                     value="Incluir E-book" /> 
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>
+

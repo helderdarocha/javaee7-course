@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:outputText rendered="#{filmeBean.filmeId == 0}">
+            <h1>Criar novo filme</h1>
+        </h:outputText>
+        <h:outputText rendered="#{filmeBean.filmeId != 0}">
+            <h1>Editar filme</h1>
+        </h:outputText>
+        
+        <h:form>
+            <h:inputHidden value="#{filmeBean.filmeId}" />
+            <p>Titulo <h:inputText value="#{filmeBean.titulo}"/>
+            <br/>Diretor <h:inputText value="#{filmeBean.diretor}"/>
+            <br/>IMDB <h:inputText value="#{filmeBean.imdb}"/>
+            <br/>Ano <h:inputText value="#{filmeBean.ano}"/>
+            <br/>Duração <h:inputText value="#{filmeBean.duracao}"/></p>
+            
+            <p><h:commandButton action="#{filmeBean.criarOuEditarFilme}" value="Criar"/></p>
+        </h:form>
+    </h:body>
+</html>
+

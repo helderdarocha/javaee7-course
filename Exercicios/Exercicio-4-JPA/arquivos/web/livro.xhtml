@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Insert or Update Livro</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <script>
+            window.onload = function() {
+                var id = 0#{param.id};
+                if (id == 0) { 
+                    document.getElementById("btn").innerHTML = "Inserir Livro Novo";
+                    document.getElementById("f1").action = "#{request.contextPath}/admin/insert"
+                } else {  
+                    document.getElementById("btn").innerHTML = "Gravar Altrerações";
+                    document.getElementById("f1").action = "#{request.contextPath}/admin/update"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Livro #{param.id}</h1>
+
+        <form method="post" id="f1">
+            <input type="hidden" name="id" value="#{param.id}" />
+            <dl>
+                <dt>ISBN</dt><dd><input type="text" size="13" name="isbn" value="#{param.isbn}"/></dd>
+                <dt>Título</dt><dd><input type="text" size="64" name="titulo" value="#{param.titulo}"/></dd>
+                <dt>Idioma</dt><dd><input type="text" size="2" name="idioma" value="#{param.idioma}"/></dd>
+            </dl>
+            <button type="submit" id="btn"></button>
+        </form>
+
+    </body>
+</html>

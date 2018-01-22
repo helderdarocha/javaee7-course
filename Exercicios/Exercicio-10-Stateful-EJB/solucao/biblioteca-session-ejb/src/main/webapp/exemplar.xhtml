@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Insert or Update Exemplar</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .error {
+                font-family: sans-serif;
+                font-size: 9pt;
+                color: red;
+             }
+        </style>
+    </h:head>
+
+    <h:body>
+        <h1>
+            <h:outputLabel rendered="#{exemplarBean.current.id != 0}">Editar exemplar no. #{exemplarBean.current.id}</h:outputLabel>
+            <h:outputLabel rendered="#{exemplarBean.current.id == 0}">Inserir exemplar</h:outputLabel>
+        </h1>
+
+        <h:form id="f1">
+            <h:inputHidden value="#{exemplarBean.current.id}" />
+            <h:panelGrid columns="3">
+                Tipo
+                <h:selectOneRadio value="#{exemplarBean.tipo}" id="tipo">
+                    <f:selectItem itemLabel="Eletrônico (PDF, ePub)" itemValue="1"/>
+                    <f:selectItem itemLabel="Impresso" itemValue="2"/>
+                    <f:ajax render="panel2 panel3" />
+                </h:selectOneRadio>
+                <h:message styleClass="error" for="tipo" />
+            </h:panelGrid>
+                
+            <h:panelGrid columns="3" id="panel2">
+                <h:outputLabel rendered="#{exemplarBean.tipo != 0}">Livro</h:outputLabel>
+                <h:selectOneListbox value="#{exemplarBean.current.livro}" id="livros" required="true" rendered="#{exemplarBean.tipo != 0}">
+                    <f:selectItem itemLabel="Selecione" noSelectionOption="true" itemValue="#{null}"/>
+                    <f:selectItems value="#{bibliotecaBean.livros}" var="livro"
+                                   itemLabel="#{livro.titulo}, #{livro.autores[0].nome}, #{livro.editora.nome}" 
+                                   itemValue="#{livro}"/>
+                    <f:converter converterId="livroConverter" />
+                </h:selectOneListbox>
+                <h:message styleClass="error" for="livros" rendered="#{exemplarBean.tipo != 0}" />
+            </h:panelGrid> 
+                
+            <h:panelGrid columns="2" id="panel3">
+                <h:outputLabel rendered="#{exemplarBean.tipo == 2}">Páginas</h:outputLabel>
+                <h:inputText rendered="#{exemplarBean.tipo == 2}" value="#{exemplarBean.paginas}"/>
+                
+                <h:outputLabel rendered="#{exemplarBean.tipo == 1}">Tamanho em bytes</h:outputLabel>
+                <h:inputText rendered="#{exemplarBean.tipo == 1}" value="#{exemplarBean.tamanho}"/>
+            </h:panelGrid> 
+
+            
+            <h:commandButton action="#{exemplarBean.gravar}" value="Gravar"/>
+            <h:commandButton action="#{exemplarBean.cancelar}" value="Cancelar" immediate="true"/>
+        </h:form>
+
+    </h:body>
+</html>

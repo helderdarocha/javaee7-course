@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Assuntos</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .assuntos {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            td {vertical-align: top}
+            .s1 th, .s0 th {
+                background: lightblue;
+            }
+            .s2 th {
+                background: lightpink;
+            }
+            .s3 th {
+                background: lightgreen;
+            }
+            .s3 tr:nth-child(even) {
+                background: linen;
+            }
+            
+            .sub {width: 100%}
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Assuntos (Dewey Decimal Classification)</h1>
+        <h:form id="f1">
+            <h:panelGrid columns="2">
+            Índices de assuntos
+            <h:selectOneRadio value="#{assuntoBean.filtroSummary}">
+                <f:selectItem itemLabel="Todos os índices" itemValue="0"/>
+                <f:selectItem itemLabel="Índice 1" itemValue="1"/>
+                <f:selectItem itemLabel="Índice 2" itemValue="2"/>
+                <f:selectItem itemLabel="Índice 3" itemValue="3"/>
+                <f:ajax render="f1 f2"/>
+            </h:selectOneRadio>
+            
+            Filtrar por classe
+            <h:inputText value="#{assuntoBean.filtroClasse}" autocomplete="off">
+                <f:ajax render="f2 f1" event="keyup" delay="1000"/>
+            </h:inputText>
+            
+            Filtrar por descrição
+            <h:inputText value="#{assuntoBean.filtroDescricao}" autocomplete="off">
+                <f:ajax render="f2 f1" event="keyup" delay="1000"/>
+            </h:inputText>
+            
+            </h:panelGrid>
+        </h:form>
+        <h:form id="f2">
+            <h:dataTable value="#{assuntoBean.assuntos}" var="summary1" styleClass="assuntos s#{assuntoBean.filtroSummary}">
+                <h:column>
+                    <f:facet name="header">DDC</f:facet>
+                    #{summary1.id.ddcClass}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Description</f:facet>
+                    #{summary1.descricao}
+                    <h:dataTable value="#{summary1.assuntos}" var="summary2" styleClass="assuntos s2 sub" rendered="#{not empty summary1.assuntos and assuntoBean.filtroSummary == 0}">
+                        <h:column>
+                            <f:facet name="header">DDC</f:facet>
+                            #{summary2.id.ddcClass}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Description</f:facet>
+                            #{summary2.descricao}
+                            <h:dataTable value="#{summary2.assuntos}" var="summary3" styleClass="assuntos s3 sub" rendered="#{not empty summary2.assuntos and assuntoBean.filtroSummary == 0}">
+                                <h:column>
+                                    <f:facet name="header">DDC</f:facet>
+                                        #{summary3.id.ddcClass}
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">Description</f:facet>
+                                        #{summary3.descricao}
+                                </h:column>
+                            </h:dataTable>
+                        </h:column>
+                    </h:dataTable>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>
+

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:fn="http://xmlns.jcp.org/jsp/jstl/functions">
+    <h:head>
+        <title>Exemplares emprestados</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <style>
+            .exemplares, a:link  {
+                border: solid black 1px;
+                font-family: sans-serif;
+                font-size: 9pt;
+            }
+            .exemplares th {
+                background: lightblue;
+            }
+            .exemplares tr:nth-child(even) {
+                background: linen;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:outputLink value="#{request.contextPath}/index.xhtml">Voltar</h:outputLink>
+        <hr/>
+        <h1>Lista de exemplares emprestados</h1>
+        <h2>Usuário: #{usuarioLogado.nome}</h2>
+        <h:form>
+            <h:dataTable value="EXERCICIO" var="exemplar" styleClass="exemplares"> <!-- EXERCICIO d.2 - Chame propriedade com lista de exemplares emprestados ao usuario logado -->
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    #{exemplar.id}</h:column>
+                <h:column>
+                    <f:facet name="header">Título</f:facet>
+                    #{exemplar.livro.titulo}</h:column>
+                <h:column>
+                    <f:facet name="header">Editora</f:facet>
+                    #{exemplar.livro.editora.nome}</h:column>
+                <h:column>
+                    <f:facet name="header">Autores</f:facet>
+                    <ui:repeat value="#{exemplar.livro.autores}" var="autor" varStatus="status">
+                        #{autor.nome}
+                        <h:outputText value=", "  rendered="#{not status.last}"/>
+                    </ui:repeat>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Tipo</f:facet>
+                    #{exemplar.tipo}</h:column>
+                <h:column>
+                    <f:facet name="header">Usuário</f:facet>
+                    #{exemplar.usuario.nome}</h:column>
+                <h:column>
+                    <f:facet name="header">Selecionar para devolver</f:facet>
+                    <h:selectBooleanCheckbox value="#{emprestimoBean.idsDevolucao[exemplar.id]}" /> <!-- grava id em Map -->
+                </h:column>
+            </h:dataTable>
+
+            <h:commandButton action="EXERCICIO" value="Devolver selecionados" /> <!-- EXERCICIO d.3 - chame metodo para devolver exemplares -->
+        </h:form>
+    </h:body>
+</html>
+

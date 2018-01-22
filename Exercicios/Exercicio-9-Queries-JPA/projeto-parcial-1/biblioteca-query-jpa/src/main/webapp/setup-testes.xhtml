@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Configurar ambiente de testes</title>
+    </h:head>
+    <h:body>
+        
+        <h:form>
+            <h2>Esvaziar tabelas de entidades</h2>
+            <h:selectManyCheckbox value="#{configBean.entidades}">
+                <f:selectItem itemValue="Autor" itemLabel="Autor" />
+                <f:selectItem itemValue="Editora" itemLabel="Editora" />
+                <f:selectItem itemValue="Livro" itemLabel="Livro" />
+                <f:selectItem itemValue="Usuario" itemLabel="Usuario" />
+                <f:selectItem itemValue="Exemplar" itemLabel="Exemplar" />
+            </h:selectManyCheckbox>
+            <h:commandButton action="#{configBean.removeAllEntities()}" value="Executar"/>
+        </h:form>
+        <h:form>
+            <h2>Preencher dados de testes</h2>
+            <h:commandButton action="#{configBean.createTestData()}" value="Executar"/>
+        </h:form>
+    </h:body>
+</html>
+

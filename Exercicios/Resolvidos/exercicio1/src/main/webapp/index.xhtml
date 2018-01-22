@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- O mapeamento das views JSF depende da configuração do FacesServlet em web.xml. 
+         Se um dos mapeamentos for *.xhtml todos os arquivos terminados em .xhtml serão processados.
+         Observe como diferentes tags do JSF geram links <a href>.
+         Veja o código-fonte gerado para este arquivo antes e depois de processado -->
+    
+    <h:head>
+        <title>Biblioteca</title>
+    </h:head>
+    <h:body>
+    	<h2>Biblioteca - Lista de livros</h2>
+    	<ul>
+    	<li><h:outputLink value="livros">Servlet</h:outputLink></li> 
+        <!-- Gera um link para o servlet mapeado a http://localhost:8080/biblioteca-livro/biblioteca-servlet -->
+        
+    	<li><h:link outcome="/biblioteca-page" value="Página JSF com Managed bean"/></li>
+        <!-- Gera um link para a página http://localhost:8080/biblioteca-livro/biblioteca-page.xhtml -->
+    	</ul>
+    </h:body>
+</html>

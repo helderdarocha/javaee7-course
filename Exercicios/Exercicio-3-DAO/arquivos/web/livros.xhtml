@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Livros</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    </h:head>
+    <h:body>
+        <h:dataTable value="#{livros}" var="livro">
+            <h:column>#{livro.id}</h:column>
+            <h:column>#{livro.isbn}</h:column>
+            <h:column>#{livro.titulo}</h:column>
+            <h:column>#{livro.idioma}</h:column>
+            <h:column>
+                <form method="post" action="#{request.contextPath}/admin/delete">
+                    <input type="hidden" name="id" value="#{livro.id}" />
+                    <button type='submit'>Remover</button>
+                </form>
+            </h:column>
+            <h:column>
+                <form method="post" action="#{request.contextPath}/livro.xhtml">
+                    <input type="hidden" name="id" value="#{livro.id}" />
+                    <input type="hidden" name="isbn" value="#{livro.isbn}" />
+                    <input type="hidden" name="titulo" value="#{livro.titulo}" />
+                    <input type="hidden" name="idioma" value="#{livro.idioma}" />
+                    <button type='submit'>Editar</button>
+                </form>
+            </h:column>
+        </h:dataTable>
+            
+        <form action="#{request.contextPath}/livro.xhtml"><button type="submit">Inserir</button></form>
+    </h:body>
+</html>
+
